@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI\\FaceitAPI.csproj": {}
+    "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI.Requests\\FaceitAPI.Requests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI\\FaceitAPI.csproj": {
+    "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI.Requests\\FaceitAPI.Requests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI\\FaceitAPI.csproj",
-        "projectName": "FaceitAPI",
-        "projectPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI\\FaceitAPI.csproj",
+        "projectUniqueName": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI.Requests\\FaceitAPI.Requests.csproj",
+        "projectName": "FaceitAPI.Requests",
+        "projectPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI.Requests\\FaceitAPI.Requests.csproj",
         "packagesPath": "C:\\Users\\kacpe_bcwebie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI\\obj\\",
+        "outputPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI.Requests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -46,10 +46,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            },
-            "newtonsoft.json": {
-              "target": "Package",
-              "version": "[12.0.2, )"
             }
           },
           "imports": [

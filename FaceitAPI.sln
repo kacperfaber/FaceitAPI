@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceitAPI", "FaceitAPI\FaceitAPI.csproj", "{E399079C-B5C2-4DF6-8386-C1DA0AC55571}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaceitAPI", "FaceitAPI\FaceitAPI.csproj", "{E399079C-B5C2-4DF6-8386-C1DA0AC55571}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceitAPI.Tests", "FaceitAPI.Tests\FaceitAPI.Tests.csproj", "{7B2318DC-3944-4BEC-91C5-AA3F7B0B914B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaceitAPI.Tests", "FaceitAPI.Tests\FaceitAPI.Tests.csproj", "{7B2318DC-3944-4BEC-91C5-AA3F7B0B914B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceitAPI.Requests", "FaceitAPI.Requests\FaceitAPI.Requests.csproj", "{D5FD4F32-CBB8-44EA-A541-990A258B1FE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7B2318DC-3944-4BEC-91C5-AA3F7B0B914B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B2318DC-3944-4BEC-91C5-AA3F7B0B914B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B2318DC-3944-4BEC-91C5-AA3F7B0B914B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5FD4F32-CBB8-44EA-A541-990A258B1FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5FD4F32-CBB8-44EA-A541-990A258B1FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5FD4F32-CBB8-44EA-A541-990A258B1FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5FD4F32-CBB8-44EA-A541-990A258B1FE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
