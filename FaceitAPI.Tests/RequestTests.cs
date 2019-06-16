@@ -9,6 +9,9 @@ using Xunit.Abstractions;
 
 namespace FaceitAPI.Tests
 {
+
+    /// jebac was wy kurwy jebane.
+
     public class RequestTests
     {
         #region CONSTRUCTOR // ITestOutputHelper = internal Out
