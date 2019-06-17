@@ -1593,6 +1593,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "FaceitAPI.Requests": "1.0.0",
           "newtonsoft.json": "12.0.2"
         },
         "compile": {
@@ -1600,6 +1601,16 @@
         },
         "runtime": {
           "bin/placeholder/FaceitAPI.dll": {}
+        }
+      },
+      "FaceitAPI.Requests/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/FaceitAPI.Requests.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FaceitAPI.Requests.dll": {}
         }
       }
     }
@@ -5641,11 +5652,17 @@
       "type": "project",
       "path": "../FaceitAPI/FaceitAPI.csproj",
       "msbuildProject": "../FaceitAPI/FaceitAPI.csproj"
+    },
+    "FaceitAPI.Requests/1.0.0": {
+      "type": "project",
+      "path": "../FaceitAPI.Requests/FaceitAPI.Requests.csproj",
+      "msbuildProject": "../FaceitAPI.Requests/FaceitAPI.Requests.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "FaceitAPI >= 1.0.0",
+      "FaceitAPI.Requests >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.0.1",
       "Microsoft.NETCore.App >= 2.0.0",
       "xunit >= 2.4.0",
@@ -5682,6 +5699,9 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
+            "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI.Requests\\FaceitAPI.Requests.csproj": {
+              "projectPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI.Requests\\FaceitAPI.Requests.csproj"
+            },
             "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI\\FaceitAPI.csproj": {
               "projectPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI\\FaceitAPI.csproj"
             }

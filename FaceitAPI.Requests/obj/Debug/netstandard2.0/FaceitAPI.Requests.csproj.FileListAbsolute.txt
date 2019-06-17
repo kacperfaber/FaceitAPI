@@ -1,0 +1,9 @@
+C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI.Requests\obj\Debug\netstandard2.0\FaceitAPI.Requests.csproj.CoreCompileInputs.cache
+C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI.Requests\obj\Debug\netstandard2.0\FaceitAPI.Requests.AssemblyInfoInputs.cache
+C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI.Requests\obj\Debug\netstandard2.0\FaceitAPI.Requests.AssemblyInfo.cs
+C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI.Requests\bin\Debug\netstandard2.0\FaceitAPI.Requests.deps.json
+C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI.Requests\bin\Debug\netstandard2.0\FaceitAPI.Requests.dll
+C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI.Requests\bin\Debug\netstandard2.0\FaceitAPI.Requests.pdb
+C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI.Requests\obj\Debug\netstandard2.0\FaceitAPI.Requests.dll
+C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI.Requests\obj\Debug\netstandard2.0\FaceitAPI.Requests.pdb
+C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI.Requests\obj\Debug\netstandard2.0\FaceitAPI.Requests.csprojAssemblyReference.cache

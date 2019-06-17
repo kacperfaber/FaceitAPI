@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace FaceitAPI.Models
 {
-    public class Championship
+    public class ChampionshipDetails
     {
         [JsonProperty("anticheat_required")]
         public bool AntiCheatRequired { get; set; }

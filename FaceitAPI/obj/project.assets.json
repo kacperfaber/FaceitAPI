@@ -34,6 +34,16 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
+      },
+      "FaceitAPI.Requests/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/FaceitAPI.Requests.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FaceitAPI.Requests.dll": {}
+        }
       }
     }
   },
@@ -210,10 +220,16 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml"
       ]
+    },
+    "FaceitAPI.Requests/1.0.0": {
+      "type": "project",
+      "path": "../FaceitAPI.Requests/FaceitAPI.Requests.csproj",
+      "msbuildProject": "../FaceitAPI.Requests/FaceitAPI.Requests.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "FaceitAPI.Requests >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "newtonsoft.json >= 12.0.2"
     ]
@@ -247,7 +263,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI.Requests\\FaceitAPI.Requests.csproj": {
+              "projectPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI.Requests\\FaceitAPI.Requests.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
