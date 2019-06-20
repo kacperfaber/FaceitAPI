@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
-using System.Text;
 using FaceitAPI.Interfaces;
-using FaceitAPI.Requests;
 using Newtonsoft.Json;
 
 namespace FaceitAPI.Types
@@ -14,7 +11,7 @@ namespace FaceitAPI.Types
         // api key
         public IAuthorizable Authorizable;
 
-        private HttpClient Http;
+        protected HttpClient Http;
 
         public Api(IAuthorizable auth)
         {

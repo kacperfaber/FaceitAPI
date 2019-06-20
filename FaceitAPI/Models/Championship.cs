@@ -19,14 +19,14 @@ namespace FaceitAPI.Models
         [JsonProperty("championship_id")]
         public string ChampsionshipId { get; set; }
 
-        [JsonProperty("checkin_clear")]
-        public int CheckinClear { get; set; }
+        //[JsonProperty("checkin_clear")]
+        //public int CheckinClear { get; set; }
 
         [JsonProperty("checkin_enabled")]
         public bool CheckinEnabled { get; set; }
 
-        [JsonProperty("checkin_start")]
-        public int CheckinStart { get; set; }
+        //[JsonProperty("checkin_start")]
+        //public int CheckinStart { get; set; }
 
         [JsonProperty("cover_image")]
         public string CoverImage { get; set; }
@@ -82,11 +82,11 @@ namespace FaceitAPI.Models
         [JsonProperty("status")]
         public string Status { get; set; }
 
-        [JsonProperty("subscription_end")]
-        public int SubscriptionEnd { get; set; }
+        //[JsonProperty("subscription_end")]
+        //public int SubscriptionEnd { get; set; }
 
-        [JsonProperty("subscription_start")]
-        public int SubscriptionStart { get; set; }
+        //[JsonProperty("subscription_start")]
+        //public int SubscriptionStart { get; set; }
 
         [JsonProperty("subscription_locked")]
         public bool SubscriptionLocked { get; set; }

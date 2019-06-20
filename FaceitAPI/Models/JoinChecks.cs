@@ -8,7 +8,7 @@ namespace FaceitAPI.Models
         public string[] AllowedTeamTypes { get; set; }
 
         [JsonProperty("blacklist_geo_countries")]
-        public string BlacklistGeoCountries { get; set; }
+        public string[] BlacklistGeoCountries { get; set; }
 
         [JsonProperty("whitelist_geo_countries")]
         public string[] WhitelistGeoCountries { get; set; }
