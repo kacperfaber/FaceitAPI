@@ -7,8 +7,14 @@ namespace FaceitAPI.Interfaces
 {
     public interface IPlayers
     {
-        PlayerDetails PlayerDetails(string playerid);
+        PlayerDetails GetPlayerDetails(string playerid);
 
-        // and lot more
+        PlayerDetails GetPlayerDetails(string playerid, string game, string gameplayerid);
+
+        History GetPlayerHistory(string playerid, string game, string from = "", string to = "", int offset = 0, int limit = 20);
+
+        Hubs GetPlayerHubs(string playerid);
+
+        Tournaments GetPlayerTournaments(string playerid);
     }
 }
