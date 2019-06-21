@@ -7,6 +7,3 @@ C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI\obj\Debug\netstandar
 C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI\obj\Debug\netstandard2.0\FaceitAPI.dll
 C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI\obj\Debug\netstandard2.0\FaceitAPI.pdb
 C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI\obj\Debug\netstandard2.0\FaceitAPI.csprojAssemblyReference.cache
-C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI\bin\Debug\netstandard2.0\FaceitAPI.Requests.dll
-C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI\bin\Debug\netstandard2.0\FaceitAPI.Requests.pdb
-C:\Users\kacpe_bcwebie\Desktop\Projects\FaceitAPI\FaceitAPI\obj\Debug\netstandard2.0\FaceitAPI.csproj.CopyComplete

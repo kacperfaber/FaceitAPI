@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Net;
 using System.Net.Http;
 using FaceitAPI.Interfaces;
@@ -6,14 +7,14 @@ using Newtonsoft.Json;
 
 namespace FaceitAPI.Types
 {
-    public class Api
+    public class ApiBase
     {
         // api key
         public IAuthorizable Authorizable;
 
         protected HttpClient Http;
 
-        public Api(IAuthorizable auth)
+        public ApiBase(IAuthorizable auth)
         {
             Http = new HttpClient();
             Http.DefaultRequestHeaders.Add("Authorization", auth.GetBearer());

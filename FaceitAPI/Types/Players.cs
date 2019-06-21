@@ -6,7 +6,7 @@ using FaceitAPI.Models;
 
 namespace FaceitAPI.Types
 {
-    public class Players : Api, IPlayers
+    public class Players : ApiBase, IPlayers
     {
         public Players(IAuthorizable auth) : base(auth)
         {

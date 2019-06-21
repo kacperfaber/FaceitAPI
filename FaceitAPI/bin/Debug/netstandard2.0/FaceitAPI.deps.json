@@ -9,7 +9,6 @@
     ".NETStandard,Version=v2.0/": {
       "FaceitAPI/1.0.0": {
         "dependencies": {
-          "FaceitAPI.Requests": "1.0.0",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.2"
         },
@@ -29,11 +28,6 @@
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.2.23222"
           }
-        }
-      },
-      "FaceitAPI.Requests/1.0.0": {
-        "runtime": {
-          "FaceitAPI.Requests.dll": {}
         }
       }
     }
@@ -64,11 +58,6 @@
       "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "path": "newtonsoft.json/12.0.2",
       "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
-    },
-    "FaceitAPI.Requests/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }
