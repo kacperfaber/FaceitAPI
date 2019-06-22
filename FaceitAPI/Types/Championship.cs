@@ -18,14 +18,14 @@ namespace FaceitAPI.Types
             return Get<ChampionshipDetails>($"https://open.faceit.com/data/v4/championships/{id}");
         }
 
-        public ChampionshipMatches GetMatches(string championshipid, string type = "all", int offset = 0, int limit = 20)
+        public ChampionshipMatches GetMatches(string id, string type = "all", int offset = 0, int limit = 20)
         {
-            throw new NotImplementedException();
+            return Get<ChampionshipMatches>($"https://open.faceit.com/data/v4/championships/{id}/matches?type={type}&offset={offset}&limit={limit}");
         }
 
-        public ChampionshipSubscription GetSubscription(string championshipid, int offset = 0, int limit = 10)
+        public ChampionshipSubscription GetSubscription(string id, int offset = 0, int limit = 10)
         {
-            throw new NotImplementedException();
+            return Get<ChampionshipSubscription>($"https://open.faceit.com/data/v4/championships/{id}/subscriptions?offset={offset}&limit={limit}");
         }
     }
 }

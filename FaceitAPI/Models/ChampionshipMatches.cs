@@ -1,7 +1,7 @@
 ﻿using FaceitAPI.Models;
 using Newtonsoft.Json;
 
-namespace FaceitAPI.Interfaces
+namespace FaceitAPI.Models
 {
     public class ChampionshipMatches
     {
@@ -9,6 +9,6 @@ namespace FaceitAPI.Interfaces
         public int End { get; set; }
 
         [JsonProperty("items")]
-        public Match[] Items{ get; set; }
+        public ChampionshipMatch[] Items{ get; set; }
     }
 }
