@@ -37,14 +37,14 @@ namespace FaceitAPI.Tests
             return details;
         }
 
-        History GetHist()
+        Paging<Match> GetHist()
         {
             Players players = new Players(new Authorization("4e79b2b9-d008-45f1-89f3-b7b856e06412"));
             return players.GetPlayerHistory("15e248b6-64e0-44b6-8d51-df1888810aac", "csgo", limit: 5);
         }
 
         // stewie2kek 10lvl from russia 
-        Hubs GetHubs()
+        Paging<Hub> GetHubs()
         {
             IAuthorizable auth = new Authorization("4e79b2b9-d008-45f1-89f3-b7b856e06412");
             IPlayers players = new Players(auth);

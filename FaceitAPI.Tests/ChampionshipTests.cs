@@ -30,7 +30,7 @@ namespace FaceitAPI.Tests
         }
 
         /// <summary>GetMatches have another championship from GetById method. </summary>
-        private ChampionshipMatches GetMatches()
+        private Paging<ChampionshipMatch> GetMatches()
         {
             Championship c = new Championship(new Authorization("316c922d-bfd4-4535-b68d-b8799fe96d47"));
             var matches = c.GetMatches("052f66eb-d3d5-44fc-a024-d83a2c5b113c", limit: 3);

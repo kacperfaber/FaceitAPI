@@ -12,9 +12,9 @@ namespace FaceitAPI.Interfaces
 
         ///<summary>Retrieve all matches of a championship</summary>
         ///<param name="type">Use ChampionshipMatchesType class.</param>
-        ChampionshipMatches GetMatches(string championshipid, string type = "all", int offset = 0, int limit = 20);
+        Paging<ChampionshipMatch> GetMatches(string championshipid, string type = "all", int offset = 0, int limit = 20);
 
         ///<summary>Retrieve all subscriptions of a championship</summary>
-        ChampionshipSubscription GetSubscription(string championshipid, int offset = 0, int limit = 10);
+        Paging<ChampionshipSubscriptionItem> GetSubscription(string championshipid, int offset = 0, int limit = 10);
     }
 }
