@@ -7,10 +7,11 @@ using Newtonsoft.Json;
 
 namespace FaceitAPI.Types
 {
-    public class ApiBase
+    public class ApiBase : IResponse
     {
-        // api key
         public IAuthorizable Authorizable;
+
+        private string ResponseText; 
 
         protected HttpClient Http;
 
@@ -35,6 +36,19 @@ namespace FaceitAPI.Types
             }
 
             throw new AggregateException("Received StatusCode is not excepted.\nThe status code is: " + response.StatusCode.ToString());
+        }
+
+        // IResponse
+
+        string IResponse.GetResponse()
+        {
+            return ResponseText;
+        }
+
+        // IResponse
+        void IResponse.SetResponse(string response)
+        {
+            ResponseText = response;
         }
     }
 }
