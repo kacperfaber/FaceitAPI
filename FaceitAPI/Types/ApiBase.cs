@@ -15,16 +15,14 @@ namespace FaceitAPI.Types
 
         protected HttpClient Http;
 
-        public ApiBase(IAuthorizable auth)
+        public ApiBase()
         {
             Http = new HttpClient();
-            Http.DefaultRequestHeaders.Add("Authorization", auth.GetBearer());
-
-            Authorizable = auth;
         }
 
         public T Get<T>(string query, HttpStatusCode expected = HttpStatusCode.OK)
         {
+            Http.DefaultRequestHeaders.Add("Authorization", Authorizable.GetBearer());
             var response = Http.GetAsync(query).Result;
 
             if (response.StatusCode == expected)

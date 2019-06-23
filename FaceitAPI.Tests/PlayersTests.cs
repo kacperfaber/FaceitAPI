@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using FaceitAPI.Interfaces;
 using FaceitAPI.Models;
 using FaceitAPI.Types;
@@ -23,7 +21,7 @@ namespace FaceitAPI.Tests
 
         PlayerDetails GetById()
         {
-            Players players = new Players(new Authorization("4e79b2b9-d008-45f1-89f3-b7b856e06412"));
+            Players players = new Players();
             PlayerDetails details = players.GetPlayerDetails("15e248b6-64e0-44b6-8d51-df1888810aac");
 
             return details;
@@ -31,7 +29,7 @@ namespace FaceitAPI.Tests
 
         PlayerDetails GetByNickname()
         {
-            Players players = new Players(new Authorization("4e79b2b9-d008-45f1-89f3-b7b856e06412"));
+            Players players = new Players();
             PlayerDetails details = players.GetPlayerDetails(nickname: "Kacperf1234");
 
             return details;
@@ -39,7 +37,7 @@ namespace FaceitAPI.Tests
 
         Paging<Match> GetHist()
         {
-            Players players = new Players(new Authorization("4e79b2b9-d008-45f1-89f3-b7b856e06412"));
+            Players players = new Players();
             return players.GetPlayerHistory("15e248b6-64e0-44b6-8d51-df1888810aac", "csgo", limit: 5);
         }
 
@@ -47,7 +45,7 @@ namespace FaceitAPI.Tests
         Paging<Hub> GetHubs()
         {
             IAuthorizable auth = new Authorization("4e79b2b9-d008-45f1-89f3-b7b856e06412");
-            IPlayers players = new Players(auth);
+            IPlayers players = new Players();
 
             return players.GetPlayerHubs("b91bc8c5-b230-45a9-843a-72fddcc03084", limit: 5);
         }
@@ -55,7 +53,7 @@ namespace FaceitAPI.Tests
         Statistic GetStats()
         {
             IAuthorizable auth = new Authorization("4e79b2b9-d008-45f1-89f3-b7b856e06412");
-            IPlayers players = new Players(auth);
+            IPlayers players = new Players();
 
             return players.GetPlayerStatistic("b91bc8c5-b230-45a9-843a-72fddcc03084", "csgo");
         }

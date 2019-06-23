@@ -8,11 +8,6 @@ namespace FaceitAPI.Types
 {
     public class Players : ApiBase, IPlayers
     {
-        public Players(IAuthorizable auth) : base(auth)
-        {
-            base.Authorizable = auth;
-        }
-
         public PlayerDetails GetPlayerDetails(string playerid)
         {
             return Get<PlayerDetails>($"https://open.faceit.com/data/v4/players/{playerid}");

@@ -23,7 +23,7 @@ namespace FaceitAPI.Tests
 
         private ChampionshipDetails GetById()
         {
-            Championship c = new Championship(new Authorization("316c922d-bfd4-4535-b68d-b8799fe96d47"));
+            Championship c = new Championship();
             var details = c.GetChampionship("4cc404ff-30f5-49f3-ba22-466b077d8b1c");
 
             return details;
@@ -32,7 +32,7 @@ namespace FaceitAPI.Tests
         /// <summary>GetMatches have another championship from GetById method. </summary>
         private Paging<ChampionshipMatch> GetMatches()
         {
-            Championship c = new Championship(new Authorization("316c922d-bfd4-4535-b68d-b8799fe96d47"));
+            Championship c = new Championship();
             var matches = c.GetMatches("052f66eb-d3d5-44fc-a024-d83a2c5b113c", limit: 3);
 
             return matches;
