@@ -5654,23 +5654,26 @@
   },
   "packageFolders": {
     "C:\\Users\\kacpe_bcwebie\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI.Tests\\FaceitAPI.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\faceitapi\\FaceitAPI.Tests\\FaceitAPI.Tests.csproj",
       "projectName": "FaceitAPI.Tests",
-      "projectPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI.Tests\\FaceitAPI.Tests.csproj",
+      "projectPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\faceitapi\\FaceitAPI.Tests\\FaceitAPI.Tests.csproj",
       "packagesPath": "C:\\Users\\kacpe_bcwebie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI.Tests\\obj\\",
+      "outputPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\faceitapi\\FaceitAPI.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\kacpe_bcwebie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -5682,8 +5685,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI\\FaceitAPI.csproj": {
-              "projectPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\FaceitAPI\\FaceitAPI\\FaceitAPI.csproj"
+            "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\faceitapi\\FaceitAPI\\FaceitAPI.csproj": {
+              "projectPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\faceitapi\\FaceitAPI\\FaceitAPI.csproj"
             }
           }
         }

@@ -13,8 +13,10 @@ namespace FaceitAPI.Interfaces
 
         History GetPlayerHistory(string playerid, string game, string from = "", string to = "", int offset = 0, int limit = 20);
 
-        Hubs GetPlayerHubs(string playerid);
+        Statistic GetPlayerStatistic(string playerid, string gameid);
 
-        Tournaments GetPlayerTournaments(string playerid);
+        Hubs GetPlayerHubs(string playerid, int offset = 0, int limit = 20);
+
+        Tournaments GetPlayerTournaments(string playerid, int offset = 0, int limit = 20);
     }
 }

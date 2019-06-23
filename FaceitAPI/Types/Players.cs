@@ -28,14 +28,19 @@ namespace FaceitAPI.Types
             return Get<History>($"https://open.faceit.com/data/v4/players/{playerid}/history?game={game}&from={from}&to={to}&offset={offset}&limit={limit}");
         }
 
-        public Hubs GetPlayerHubs(string playerid)
+        public Hubs GetPlayerHubs(string playerid, int offset = 0, int limit = 20)
         {
-            throw new NotImplementedException();
+            return Get<Hubs>($"https://open.faceit.com/data/v4/players/{playerid}/hubs?offset={offset}&limit={limit}");
         }
 
-        public Tournaments GetPlayerTournaments(string playerid)
+        public Statistic GetPlayerStatistic(string playerid, string gameid)
         {
-            throw new NotImplementedException();
+            return Get<Statistic>($"https://open.faceit.com/data/v4/players/{playerid}/stats/{gameid}");
+        }
+
+        public Tournaments GetPlayerTournaments(string playerid, int offset = 0, int limit = 20)
+        {
+            return Get<Tournaments>($"https://open.faceit.com/data/v4/players/{playerid}/tournaments?offset={offset}&limit={limit}");
         }
     }
 }
