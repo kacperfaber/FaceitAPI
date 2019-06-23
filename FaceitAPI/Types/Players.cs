@@ -23,7 +23,7 @@ namespace FaceitAPI.Types
             return Get<PlayerDetails>($"https://open.faceit.com/data/v4/players?nickname={nickname}&game={game}&game_player_id={gameplayerid}");
         }
 
-        public History GetPlayerHistory(string playerid, string game, string from = "", string to = "", int offset = 0, int limit = 20)
+        public History GetPlayerHistory(string playerid, string game = "csgo", string from = "", string to = "", int offset = 0, int limit = 20)
         {
             return Get<History>($"https://open.faceit.com/data/v4/players/{playerid}/history?game={game}&from={from}&to={to}&offset={offset}&limit={limit}");
         }
@@ -33,7 +33,7 @@ namespace FaceitAPI.Types
             return Get<Hubs>($"https://open.faceit.com/data/v4/players/{playerid}/hubs?offset={offset}&limit={limit}");
         }
 
-        public Statistic GetPlayerStatistic(string playerid, string gameid)
+        public Statistic GetPlayerStatistic(string playerid, string gameid = "csgo")
         {
             return Get<Statistic>($"https://open.faceit.com/data/v4/players/{playerid}/stats/{gameid}");
         }

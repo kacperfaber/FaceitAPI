@@ -7,7 +7,7 @@ namespace FaceitAPI.Models
     public class History
     {
         [JsonProperty("items")]
-        public Match[] Matches { get; set; }
+        public Match[] Items { get; set; }
 
         [JsonProperty("end")]
         public int End { get; set; }

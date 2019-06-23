@@ -11,9 +11,9 @@ namespace FaceitAPI.Interfaces
 
         PlayerDetails GetPlayerDetails(string playerid, string game, string gameplayerid);
 
-        History GetPlayerHistory(string playerid, string game, string from = "", string to = "", int offset = 0, int limit = 20);
+        History GetPlayerHistory(string playerid, string game = "csgo", string from = "", string to = "", int offset = 0, int limit = 20);
 
-        Statistic GetPlayerStatistic(string playerid, string gameid);
+        Statistic GetPlayerStatistic(string playerid, string gameid = "csgo");
 
         Hubs GetPlayerHubs(string playerid, int offset = 0, int limit = 20);
 

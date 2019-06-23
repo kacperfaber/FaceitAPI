@@ -11,6 +11,6 @@ namespace FaceitAPI.Models
         public int Start { get; set; }
 
         [JsonProperty("items")]
-        public Hub[] Items { get; set; }
+        public SimpleHub[] Items { get; set; }
     }
 }
