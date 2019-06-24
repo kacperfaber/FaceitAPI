@@ -5,9 +5,9 @@ namespace FaceitAPI.Models
     public class Teams
     {
         [JsonProperty("faction1")]
-        public Team TeamA { get; set; }
+        public MatchTeam TeamA { get; set; }
 
         [JsonProperty("faction2")]
-        public Team TeamB { get; set; }
+        public MatchTeam TeamB { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace FaceitAPI.Models
 {
-    public class Platforms
+    public class Schedule
     {
     }
 }

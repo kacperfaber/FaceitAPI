@@ -5,7 +5,7 @@ namespace FaceitAPI.Models
     public class GameData
     {
         [JsonProperty("assets")]
-        public Assets Assets{ get; set; }
+        public Assets Assets { get; set; }
 
         [JsonProperty("game_id")]
         public string GameId { get; set; }
@@ -20,7 +20,7 @@ namespace FaceitAPI.Models
         public string ParentGameId { get; set; }
 
         [JsonProperty("platforms")]
-        public string[] Platforms{ get; set; }
+        public string[] Platforms { get; set; }
 
         [JsonProperty("regions")]
         public string[] Regions { get; set; }

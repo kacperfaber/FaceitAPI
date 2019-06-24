@@ -2,15 +2,15 @@
 
 namespace FaceitAPI.Models
 {
-    public class Hubs
+    public class Paging <TYPE>
     {
-        [JsonProperty("end")]
-        public int End { get; set; }
-
         [JsonProperty("start")]
         public int Start { get; set; }
 
+        [JsonProperty("end")]
+        public int End { get; set; }
+
         [JsonProperty("items")]
-        public SimpleHub[] Items { get; set; }
+        public TYPE[] Items { get; set; }
     }
 }

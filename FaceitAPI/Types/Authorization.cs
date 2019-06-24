@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Text;
 using FaceitAPI.Interfaces;
 
-namespace FaceitAPI.Models
+namespace FaceitAPI.Types
 {
     public class Authorization : IAuthorizable
     {
-        private string Key;
+        public string Key { get; set; }
 
-        public Authorization(string key)
+        public Authorization(string k)
         {
-            Key = key;
+            Key = k;
         }
 
         public string GetBearer()

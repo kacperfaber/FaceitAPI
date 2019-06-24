@@ -11,7 +11,7 @@ namespace FaceitAPI.Models
         public int BestOf { get; set; }
 
         [JsonProperty("broadcast_start_time")]
-        public int BroadcastStartTime { get; set; }
+        public ulong BroadcastStartTime { get; set; }
 
         [JsonProperty("broadcast_start_time_label")]
         public string BroadcastStartTimeLabel { get; set; }
@@ -32,7 +32,7 @@ namespace FaceitAPI.Models
         public string CompetitionType { get; set; }
 
         [JsonProperty("configured_at")]
-        public int ConfiguredAt { get; set; }
+        public ulong ConfiguredAt { get; set; }
 
         [JsonProperty("demo_url")]
         public string[] DemoUrl { get; set; }
@@ -41,7 +41,7 @@ namespace FaceitAPI.Models
         public string FaceitUrl { get; set; }
 
         [JsonProperty("finished_at")]
-        public int FinishedAt { get; set; }
+        public ulong FinishedAt { get; set; }
 
         [JsonProperty("game")]
         public string Game { get; set; }
@@ -59,16 +59,17 @@ namespace FaceitAPI.Models
         public string Region { get; set; }
 
         [JsonProperty("results")]
-        public Results Results { get; set; }
+        [Obsolete("not implemented. ")]
+        public MatchResults MatchResults { get; set; }
 
         [JsonProperty("round")]
         public int Round { get; set; }
 
-        [JsonProperty("scheduled_at")]
-        public int ScheduledAt { get; set; }
+        [JsonProperty("schedule_at")]
+        public ulong ScheduleAt { get; set; }
 
         [JsonProperty("started_at")]
-        public int StartedAt { get; set; }
+        public ulong StartedAt { get; set; }
 
         [JsonProperty("status")]
         public string Status { get; set; }
@@ -78,5 +79,8 @@ namespace FaceitAPI.Models
 
         [JsonProperty("version")]
         public int Version { get; set; }
+
+        [JsonProperty("voting")]
+        public object Voting { get; set; }
     }
 }

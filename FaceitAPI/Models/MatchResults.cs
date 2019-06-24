@@ -1,6 +1,6 @@
 ﻿namespace FaceitAPI.Models
 {
-    public class Infractions
+    public class MatchResults
     {
     }
 }
