@@ -9,9 +9,9 @@ namespace FaceitAPI.Types
     {
         public string Key { get; set; }
 
-        public Authorization(string k)
+        public Authorization(string apikey)
         {
-            Key = k;
+            Key = apikey;
         }
 
         public string GetBearer()

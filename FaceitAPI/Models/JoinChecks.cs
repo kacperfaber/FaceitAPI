@@ -19,7 +19,7 @@ namespace FaceitAPI.Models
         [JsonProperty("min_skill_level")]
         public int MinSkillLevel { get; set; }
 
-        [JsonProperty("membership_typ")]
+        [JsonProperty("membership_type")]
         public string MembershipType { get; set; }
 
         [JsonProperty("whitelist_geo_countries")]

@@ -20,10 +20,10 @@ namespace FaceitAPI.Models
         public string ChampionshipId { get; set; }
 
         [JsonProperty("championship_start")]
-        public int ChampionshipStart { get; set; }
+        public ulong ChampionshipStart { get; set; }
 
         [JsonProperty("checkin_clear")]
-        public int CheckinClear { get; set; }
+        public ulong CheckinClear { get; set; }
 
         [JsonProperty("checkin_enabled")]
         public bool CheckinEnabled { get; set; }
@@ -87,10 +87,10 @@ namespace FaceitAPI.Models
         public string Status { get; set; }
 
         [JsonProperty("subscription_end")]
-        public int SubscriptionEnd { get; set; }
+        public ulong SubscriptionEnd { get; set; }
 
         [JsonProperty("subscription_start")]
-        public int SubscriptionStart { get; set; }
+        public ulong SubscriptionStart { get; set; }
 
         [JsonProperty("substitution_configuration")]
         public SubstitutionConfiguration SubstitutionConfiguration { get; set; }

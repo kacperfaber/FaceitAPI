@@ -30,7 +30,7 @@ namespace FaceitAPI.Types
             return Authorizable;
         }
 
-        public T Get<T>(string query, HttpStatusCode expected = HttpStatusCode.OK)
+        protected T Get<T>(string query, HttpStatusCode expected = HttpStatusCode.OK)
         {
             var response = Http.GetAsync(query).Result;
 
