@@ -31,6 +31,9 @@ namespace FaceitAPI.Models
         [JsonProperty("configured_at")]
         public ulong ConfiguredAt { get; set; }
 
+        [JsonProperty("started_at")]
+        public ulong StartedAt { get; set; }
+
         [JsonProperty("demo_url")]
         public string[] DemoUrl { get; set; }
 
