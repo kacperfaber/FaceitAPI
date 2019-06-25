@@ -25,6 +25,9 @@ namespace FaceitAPI.Models
         [JsonProperty("checkin_clear")]
         public ulong CheckinClear { get; set; }
 
+        [JsonProperty("checkin_start")]
+        public ulong CheckinStart { get; set; }
+
         [JsonProperty("checkin_enabled")]
         public bool CheckinEnabled { get; set; }
 

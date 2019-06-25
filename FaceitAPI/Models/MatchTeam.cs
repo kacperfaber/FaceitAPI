@@ -17,7 +17,7 @@ namespace FaceitAPI.Models
         public string Name { get; set; }
 
         [JsonProperty("roster")]
-        public Roster Roster { get; set; }
+        public Roster[] Roster { get; set; }
 
         [JsonProperty("roster_v1")]
         public object RosterV1 { get; set; }

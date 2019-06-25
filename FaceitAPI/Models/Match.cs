@@ -13,9 +13,6 @@ namespace FaceitAPI.Models
         [JsonProperty("broadcast_start_time")]
         public ulong BroadcastStartTime { get; set; }
 
-        [JsonProperty("broadcast_start_time_label")]
-        public string BroadcastStartTimeLabel { get; set; }
-
         [JsonProperty("calculate_elo")]
         public bool CalculateElo { get; set; }
 
@@ -59,17 +56,13 @@ namespace FaceitAPI.Models
         public string Region { get; set; }
 
         [JsonProperty("results")]
-        [Obsolete("not implemented. ")]
         public MatchResults MatchResults { get; set; }
 
         [JsonProperty("round")]
         public int Round { get; set; }
 
-        [JsonProperty("schedule_at")]
-        public ulong ScheduleAt { get; set; }
-
-        [JsonProperty("started_at")]
-        public ulong StartedAt { get; set; }
+        [JsonProperty("scheduled_at")]
+        public ulong ScheduledAt { get; set; }
 
         [JsonProperty("status")]
         public string Status { get; set; }
@@ -79,8 +72,5 @@ namespace FaceitAPI.Models
 
         [JsonProperty("version")]
         public int Version { get; set; }
-
-        [JsonProperty("voting")]
-        public object Voting { get; set; }
     }
 }

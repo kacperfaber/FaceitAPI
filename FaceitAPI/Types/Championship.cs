@@ -17,5 +17,10 @@ namespace FaceitAPI.Types
         {
             return Get<Paging<Match>>($"https://open.faceit.com/data/v4/championships/{championship_id}/matches?type={type}&offset={0}&limit={limit}");
         }
+
+        public Paging<ChampionshipSubscription> GetSubscriptions(string championship_id, int offset = 0, int limit = 10)
+        {
+            return Get<Paging<ChampionshipSubscription>>($"https://open.faceit.com/data/v4/championships/{championship_id}/subscriptions?offset={offset}&limit={limit}");
+        }
     }
 }
