@@ -29,6 +29,15 @@ namespace FaceitAPI.Tests
             return m;
         }
 
+        public Paging<ChampionshipSubscription> GetSubscriptions()
+        {
+            Faceit faceit = new Faceit(new Authorization("316c922d-bfd4-4535-b68d-b8799fe96d47"));
+            Championship c = faceit.Get<Championship>();
+            Paging<ChampionshipSubscription> subscriptions = c.GetSubscriptions("a12aed14-2804-455e-a874-272b465b37c7", limit: 3);
+
+            return subscriptions;
+        }
+
         [Fact]
         public void GetById_NotThrowsExceptions()
         {
@@ -115,6 +124,46 @@ namespace FaceitAPI.Tests
             Assert.True(7 == d.Round);
             Assert.NotNull(d.Teams);
             Assert.NotNull(d.MatchResults);
+        }
+
+        [Fact]
+        public void GetSubscriptions_NotThrowsExceptions()
+        {
+            Assert.Null(Record.Exception(() => GetSubscriptions()));
+        }
+
+        [Fact]
+        public void GetSubscriptions_ReturnsNotNull()
+        {
+            Assert.NotNull(GetSubscriptions());
+        }
+
+        [Fact]
+        public void GetSubscriptions_ReturnsValidItemCount()
+        {
+            Assert.True(GetSubscriptions().Items.Length == 3);
+        }
+
+        [Fact]
+        public void GetSubscriptions_NotContainsNullItems()
+        {
+            foreach (ChampionshipSubscription cs in GetSubscriptions().Items)
+            {
+                Assert.NotNull(cs);
+            }
+        }
+
+        [Fact]
+        public void GetSubscriptions_ReturnsValidRoot()
+        {
+            var f = GetSubscriptions().Items.First();
+
+            Assert.Equal("", f.Coach);
+            Assert.Equal("", f.Coleader);
+            Assert.Equal("2252b99b-3d8c-4ef5-b2cd-4433bb6a4d0d", f.Leader);
+            Assert.NotNull(f.Team);
+            Assert.True(1 == f.Group);
+            Assert.Equal("checkedIn", f.Status);
         }
     }
 

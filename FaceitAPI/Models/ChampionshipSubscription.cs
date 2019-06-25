@@ -10,6 +10,9 @@ namespace FaceitAPI.Models
         [JsonProperty("coleader")]
         public string Coleader { get; set; }
 
+        [JsonProperty("leader")]
+        public string Leader { get; set; }
+
         [JsonProperty("group")]
         public int Group { get; set; }
 
