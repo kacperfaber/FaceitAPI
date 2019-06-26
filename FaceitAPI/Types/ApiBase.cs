@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Net;
 using System.Net.Http;
+using FaceitAPI.Exceptions;
 using FaceitAPI.Interfaces;
 using Newtonsoft.Json;
 
@@ -46,6 +47,11 @@ namespace FaceitAPI.Types
                 T t = JsonConvert.DeserializeObject<T>(json);
 
                 return t;
+            }
+
+            if (response.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                throw new UnauthorizedException();
             }
 
             throw new AggregateException("Received StatusCode is not excepted.\nThe status code is: " + response.StatusCode.ToString());
