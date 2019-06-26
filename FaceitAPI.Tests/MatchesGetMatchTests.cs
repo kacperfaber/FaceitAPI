@@ -14,7 +14,7 @@ namespace FaceitAPI.Tests
         Match Get(string id = "1-ff7ddff1-21ad-48b2-b016-5d55596206d9", string apikey = "316c922d-bfd4-4535-b68d-b8799fe96d47")
         {
             Faceit faceit = new Faceit(new Authorization(apikey));
-            IMatches matches = faceit.Get<Matches>();
+            IMatches matches = faceit.GetObject<Matches>();
 
             return matches.GetMatch(id);
         }

@@ -8,11 +8,11 @@ using Xunit.Abstractions;
 
 namespace FaceitAPI.Tests
 {
-    public partial class ChampionshipGetChampionship
+    public partial class ChampionshipGetChampionshipTests
     {
         ChampionshipDetails Get(string id = "8f71b250-d621-4bd5-8265-2d7ecd4508da", string apikey = "316c922d-bfd4-4535-b68d-b8799fe96d47")
         {
-            return new Faceit(new Authorization(apikey)).Get<Championship>().GetChampionship(id);
+            return new Faceit(new Authorization(apikey)).GetObject<Championship>().GetChampionship(id);
         }
 
         [Fact]

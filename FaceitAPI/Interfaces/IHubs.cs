@@ -5,7 +5,7 @@ using FaceitAPI.Models;
 
 namespace FaceitAPI.Interfaces
 {
-    public interface IHubs
+    public interface IHubs : IApiBase
     {
         HubDetails GetHub(string hub_id);
 

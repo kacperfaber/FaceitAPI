@@ -8,6 +8,11 @@ namespace FaceitAPI.Types
 {
     public class Matches : ApiBase, IMatches
     {
+        public Matches(IAuthorizable authorizable) : base(authorizable)
+        {
+            
+        }
+
         public Match GetMatch(string match_id)
         {
             return Get<Match>($"https://open.faceit.com/data/v4/matches/{match_id}");

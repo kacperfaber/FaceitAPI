@@ -5,7 +5,7 @@ using FaceitAPI.Models;
 
 namespace FaceitAPI.Interfaces
 {
-    public interface IMatches
+    public interface IMatches : IApiBase
     {
         Match GetMatch(string match_id);
 

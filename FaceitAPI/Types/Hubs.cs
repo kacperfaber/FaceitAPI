@@ -8,6 +8,11 @@ namespace FaceitAPI.Types
 {
     public class Hubs : ApiBase, IHubs
     {
+        public Hubs(IAuthorizable authorizable) : base(authorizable)
+        {
+
+        }
+
         public HubDetails GetHub(string hub_id)
         {
             return Get<HubDetails>($"https://open.faceit.com/data/v4/hubs/{hub_id}?expanded=organizer,game");

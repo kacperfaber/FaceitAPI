@@ -8,6 +8,11 @@ namespace FaceitAPI.Types
 {
     public class Championship : ApiBase, IChampionship
     {
+        public Championship(IAuthorizable authorizable) : base(authorizable)
+        {
+
+        }
+
         public ChampionshipDetails GetChampionship(string championship_id)
         {
             return Get<ChampionshipDetails>($"https://open.faceit.com/data/v4/championships/{championship_id}?expanded=organizer,game");

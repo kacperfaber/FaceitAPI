@@ -6,6 +6,11 @@ namespace FaceitAPI.Types
 {
     public class Games : ApiBase, IGames
     {
+        public Games(IAuthorizable authorizable) : base(authorizable)
+        {
+
+        }
+
         public GameDetails GetGame(string game_id)
         {
             throw new NotImplementedException();

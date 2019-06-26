@@ -5,35 +5,34 @@ using FaceitAPI.Interfaces;
 
 namespace FaceitAPI.Types
 {
-    public class Faceit
+    public class Faceit : SimpleContainer<ApiBase>
     {
         public IAuthorizable Authorizable;
-        private Dictionary<Type, ApiBase> Instances;
 
         public Faceit(IAuthorizable authorizable)
         {
-            Instances = new Dictionary<Type, ApiBase>();
             Authorizable = authorizable;
         }
 
-        public T Get<T>() 
-            where T : ApiBase
+        public T GetObject<T>() where T : ApiBase
         {
-            Type type = typeof(T);
-
-            if (Instances.ContainsKey(type))
+            if (Exist<T>())
             {
-                return (T) Instances[type];
+                return Get<T, T>();
             }
 
             else
             {
-                ApiBase apibase = (ApiBase) Activator.CreateInstance(type);
-                apibase.SetAuthorizable(Authorizable);
+                T instance = (T) Activator.CreateInstance(typeof(T), Authorizable);
 
-                Instances.Add(type, apibase);
-                return (T) Instances[type];
+                RegisterObject<T>(instance);
+                return instance;
             }
+        }
+
+        public void DestroyObject<T>()
+        {
+            UnregisterObject<T>();
         }
     }
 }

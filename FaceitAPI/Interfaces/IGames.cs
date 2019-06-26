@@ -5,7 +5,7 @@ using FaceitAPI.Models;
 
 namespace FaceitAPI.Interfaces
 {
-    public interface IGames
+    public interface IGames : IApiBase
     {
         Paging<GameDetails> GetGames(int offset = 0, int limit = 20);
 

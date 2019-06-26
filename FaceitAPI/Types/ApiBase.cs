@@ -17,7 +17,13 @@ namespace FaceitAPI.Types
             Http = new HttpClient();
         }
 
-        public void SetAuthorizable(IAuthorizable authorizable, bool addheader = true)
+        public ApiBase(IAuthorizable authorizable)
+        {
+            Http = new HttpClient();
+            SetAuthorizable(authorizable);
+        }
+
+        protected void SetAuthorizable(IAuthorizable authorizable, bool addheader = true)
         {
             Authorizable = authorizable;
 
@@ -25,7 +31,7 @@ namespace FaceitAPI.Types
                 Http.DefaultRequestHeaders.Add("Authorization", Authorizable.GetBearer());
         }
         
-        public IAuthorizable GetAuthorizable()
+        protected IAuthorizable GetAuthorizable()
         {
             return Authorizable;
         }
