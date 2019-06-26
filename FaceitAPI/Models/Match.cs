@@ -70,6 +70,7 @@ namespace FaceitAPI.Models
         [JsonProperty("status")]
         public string Status { get; set; }
 
+        [Obsolete("IN PUBG TEAMS IS MORE THAN 2. It will changed to Dict <string, Team>")]
         [JsonProperty("teams")]
         public Teams Teams { get; set; }
 
