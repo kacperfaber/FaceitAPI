@@ -1,1 +1,2 @@
 ﻿1. Create Voting class model. Add him to match model. Samples from Match too.
+2. Match.cs Obsolete 70+ lines.

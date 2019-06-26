@@ -74,6 +74,9 @@ namespace FaceitAPI.Models
         [JsonProperty("teams")]
         public Teams Teams { get; set; }
 
+        [JsonProperty("voting")]
+        public Voting Voting { get; set; }
+
         [JsonProperty("version")]
         public int Version { get; set; }
     }

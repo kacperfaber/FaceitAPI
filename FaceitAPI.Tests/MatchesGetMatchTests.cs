@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Text;
 using FaceitAPI.Interfaces;
 using FaceitAPI.Models;
@@ -75,7 +77,16 @@ namespace FaceitAPI.Tests
             Match m = Get();
 
             Assert.NotNull(m.Teams);
+            Assert.NotNull(m.Voting);
             Assert.NotNull(m.MatchResults);
+        }
+
+        [Fact]
+        public void ReturnsVottingValidPick()
+        {
+            var vote = Get().Voting;
+
+            Assert.Equal("de_cache", vote.Maps.Pick.First());
         }
     }
 

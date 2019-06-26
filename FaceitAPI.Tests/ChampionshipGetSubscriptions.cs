@@ -104,18 +104,6 @@ namespace FaceitAPI.Tests
 
             Assert.True(2 == member.Length);
         }
-
-        [Fact]
-        public void ReturnsValidTeamMember()
-        {
-            ChampionshipTeamMember m = Get().Items.First().Team.Members.First();
-
-            Assert.Equal("f7f81b08-1887-4746-ac04-07608a9000c0", m.UserId);
-            Assert.Equal("ZoltaX", m.Nickname);
-            Assert.Equal("https://www.faceit.com/{lang}/players/ZoltaX", m.FaceitUrl);
-            Assert.Equal("RU", m.Country);
-            Assert.True(m.SkillLevel > 0);
-        }
     }
 
     public partial class ChampionshipGetSubscriptions
