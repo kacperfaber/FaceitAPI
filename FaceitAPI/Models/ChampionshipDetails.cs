@@ -49,6 +49,9 @@ namespace FaceitAPI.Models
         [JsonProperty("full")]
         public bool Full { get; set; }
 
+        [JsonProperty("subscriptions_locked")]
+        public bool SubscriptionLocked { get; set; }
+
         [JsonProperty("game_data")]
         public GameData GameData { get; set; }
 
