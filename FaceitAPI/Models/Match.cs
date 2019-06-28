@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace FaceitAPI.Models
 {
@@ -70,9 +72,36 @@ namespace FaceitAPI.Models
         [JsonProperty("status")]
         public string Status { get; set; }
 
-        [Obsolete("IN PUBG TEAMS IS MORE THAN 2. It will changed to Dict <string, Team>")]
         [JsonProperty("teams")]
-        public Teams Teams { get; set; }
+        private Dictionary<string, object> teams { get; set; }
+
+        public MatchTeam[] Teams
+        {
+            get
+            {
+                var array = teams.Values.ToArray();
+                List<MatchTeam> outarr = new List<MatchTeam>();
+
+                foreach (var item in array)
+                {
+                    JObject a = (JObject) item;
+                    outarr.Add(a.ToObject<MatchTeam>());
+                }
+
+                return outarr.ToArray();
+            }
+
+            set
+            {
+                Dictionary<string, object> dict = new Dictionary<string, object>();
+
+                for (int x = 0; x < value.Length; x++)
+                {
+                    string name = "faction" + x;
+                    dict.Add(name, value[x]);
+                }
+            }
+        }
 
         [JsonProperty("voting")]
         public Voting Voting { get; set; }

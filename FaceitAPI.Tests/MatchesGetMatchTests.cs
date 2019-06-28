@@ -92,11 +92,11 @@ namespace FaceitAPI.Tests
 
     public partial class MatchesGetMatches
     {
-        internal ITestOutputHelper Out;
+        internal ITestOutputHelper Output;
 
         public MatchesGetMatches(ITestOutputHelper helper)
         {
-            Out = helper;
+            Output = helper;
         }
     }
 }
