@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using FaceitAPI.Interfaces;
 using FaceitAPI.Models;
 
@@ -25,22 +23,22 @@ namespace FaceitAPI.Types
 
         public Paging<SimpleOrganizer> GetOrganizers(string name, int offset = 0, int limit = 20)
         {
-            throw new NotImplementedException();
+            return Get<Paging<SimpleOrganizer>>($"https://open.faceit.com/data/v4/search/organizers?name={name}&offset={offset}&limit={limit}");
         }
 
         public Paging<SimplePlayer> GetPlayers(string nickname, string game = "", string country = "", int offset = 0, int limit = 20)
         {
-            throw new NotImplementedException();
+            return Get<Paging<SimplePlayer>>($"https://open.faceit.com/data/v4/search/players?nickname={nickname}&game={game}&country={country}&offset={offset}&limit={limit}");
         }
 
-        public Paging<SimpleTeam> GetTeams(string nickname, string game = "", int offset = 0, int limit = 20)
+        public Paging<SimpleTeam> GetTeams(string teamname, string game = "", int offset = 0, int limit = 20)
         {
-            throw new NotImplementedException();
+            return Get<Paging<SimpleTeam>>($"https://open.faceit.com/data/v4/search/teams?nickname={teamname}&game={game}&offset={offset}&limit={limit}");
         }
 
         public Paging<SimpleTournament> GetTournaments(string name, string game = "", string region = "", string type = "all", int offset = 0, int limit = 20)
         {
-            throw new NotImplementedException();
+            return Get<Paging<SimpleTournament>>($"https://open.faceit.com/data/v4/search/tournaments?name={name}&type={type}&region={region}&offset={offset}&limit={limit}");
         }
     }
 }
