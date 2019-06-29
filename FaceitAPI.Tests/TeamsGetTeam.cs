@@ -14,7 +14,7 @@ namespace FaceitAPI.Tests
         private ChampionshipTeam Get(string id = "83a5ed0b-ccc9-48f7-bcea-3bb6697a9dd5", string apikey = "316c922d-bfd4-4535-b68d-b8799fe96d47")
         {
             Faceit f = new Faceit(new Authorization(apikey));
-            return f.GetObject<Types.Teams>().GetTeam(id);
+            return f.GetObject<Teams>().GetTeam(id);
         }
 
         [Fact]
@@ -37,7 +37,7 @@ namespace FaceitAPI.Tests
             Assert.Equal("83a5ed0b-ccc9-48f7-bcea-3bb6697a9dd5", r.TeamId);
             Assert.Equal("XDDm8456", r.Nickname);
             Assert.Equal("nibfasfb asiofa", r.Name);
-            Assert.Equal("", r.Description);
+            Assert.Equal("tests", r.Description);
             Assert.Equal("", r.Avatar);
             Assert.Equal("", r.CoverImage);
             Assert.Equal("csgo", r.Game);
@@ -60,7 +60,7 @@ namespace FaceitAPI.Tests
         [Fact]
         public void ReturnsMembersContainsKacperfProfile()
         {
-            ChampionshipTeamMember member = Get().Members.Where(x => x.Country.Equals("pl")).Where(x => x.Nickname.Equals("Kacperf1234")).First();
+            Member member = Get().Members.Where(x => x.Country.Equals("pl")).Where(x => x.Nickname.Equals("Kacperf1234")).First();
 
             Assert.NotNull(member);
         }

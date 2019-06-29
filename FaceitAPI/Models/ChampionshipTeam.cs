@@ -29,7 +29,7 @@ namespace FaceitAPI.Models
         public string Leader { get; set; }
 
         [JsonProperty("members")]
-        public ChampionshipTeamMember[] Members { get; set; }
+        public Member[] Members { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }

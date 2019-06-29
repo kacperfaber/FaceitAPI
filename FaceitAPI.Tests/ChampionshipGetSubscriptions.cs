@@ -100,7 +100,7 @@ namespace FaceitAPI.Tests
         [Fact]
         public void ReturnsValidTeamMembersCount()
         {
-            ChampionshipTeamMember[] member = Get().Items.First().Team.Members;
+            Member[] member = Get().Items.First().Team.Members;
 
             Assert.True(2 == member.Length);
         }

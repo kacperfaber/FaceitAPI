@@ -226,11 +226,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\faceitapi\\FaceitAPI\\FaceitAPI.csproj",
+      "projectUniqueName": "C:\\Users\\kacpe_bcwebie\\source\\repos\\FaceitAPI\\FaceitAPI\\FaceitAPI.csproj",
       "projectName": "FaceitAPI",
-      "projectPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\faceitapi\\FaceitAPI\\FaceitAPI.csproj",
+      "projectPath": "C:\\Users\\kacpe_bcwebie\\source\\repos\\FaceitAPI\\FaceitAPI\\FaceitAPI.csproj",
       "packagesPath": "C:\\Users\\kacpe_bcwebie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kacpe_bcwebie\\Desktop\\Projects\\faceitapi\\FaceitAPI\\obj\\",
+      "outputPath": "C:\\Users\\kacpe_bcwebie\\source\\repos\\FaceitAPI\\FaceitAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

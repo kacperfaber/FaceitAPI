@@ -23,9 +23,9 @@ namespace FaceitAPI.Types
             return Get<Paging<Match>>($"https://open.faceit.com/data/v4/hubs/{hub_id}/matches?type={type}&offset={offset}&limit={limit}");
         }
 
-        public Paging<Member> GetMembers(string hub_id, int offset = 0, int limit = 20)
+        public Paging<SimpleMember> GetMembers(string hub_id, int offset = 0, int limit = 20)
         {
-            return Get<Paging<Member>>($"https://open.faceit.com/data/v4/hubs/{hub_id}/members?offset={offset}&limit={limit}");
+            return Get<Paging<SimpleMember>>($"https://open.faceit.com/data/v4/hubs/{hub_id}/members?offset={offset}&limit={limit}");
         }
 
         public Paging<Role> GetRoles(string hub_id, int offset = 0, int limit = 20)

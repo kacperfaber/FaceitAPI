@@ -11,7 +11,7 @@ namespace FaceitAPI.Interfaces
 
         Paging<Match> GetMatches(string hub_id, string type = "all", int offset = 0, int limit = 20);
 
-        Paging<Member> GetMembers(string hub_id, int offset = 0, int limit = 20);
+        Paging<SimpleMember> GetMembers(string hub_id, int offset = 0, int limit = 20);
 
         Paging<Role> GetRoles(string hub_id, int offset = 0, int limit = 20);
 

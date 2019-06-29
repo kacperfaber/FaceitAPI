@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace FaceitAPI.Models
 {
@@ -10,13 +7,25 @@ namespace FaceitAPI.Models
         [JsonProperty("avatar")]
         public string Avatar { get; set; }
 
+        [JsonProperty("country")]
+        public string Country { get; set; }
+
         [JsonProperty("faceit_url")]
         public string FaceitUrl { get; set; }
+
+        [JsonProperty("membership_type")]
+        public string MembershipType { get; set; }
+
+        [JsonProperty("memberships")]
+        public string[] Memberships { get; set; }
 
         [JsonProperty("nickname")]
         public string Nickname { get; set; }
 
-        [JsonProperty("roles")]
-        public string[] Roles { get; set; }
+        [JsonProperty("skill_level")]
+        public int SkillLevel { get; set; }
+
+        [JsonProperty("user_id")]
+        public string UserId { get; set; }
     }
 }
