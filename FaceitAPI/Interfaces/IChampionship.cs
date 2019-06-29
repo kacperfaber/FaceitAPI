@@ -6,7 +6,7 @@ using FaceitAPI.Types;
 
 namespace FaceitAPI.Interfaces
 {
-    public interface IChampionship : IApiBase
+    public interface IChampionships : IApiBase
     {
         ChampionshipDetails GetChampionship(string championship_id);
         

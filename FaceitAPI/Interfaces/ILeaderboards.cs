@@ -5,7 +5,7 @@ using FaceitAPI.Models;
 
 namespace FaceitAPI.Interfaces
 {
-    public interface ILeaderboards
+    public interface ILeaderboards : IApiBase
     {
         Paging<LeaderboardDetails> GetChampionshipLeaderboards(string championship_id, int offset = 0, int limit = 20);
 

@@ -68,7 +68,7 @@ namespace FaceitAPI.Models
         public string Name { get; set; }
 
         [JsonProperty("organizer_data")]    
-        public OrganizerData OrganizerData { get; set; }
+        public OrganizerDetails OrganizerData { get; set; }
 
         [JsonProperty("organizer_id")]
         public string OrganizerId { get; set; }

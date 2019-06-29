@@ -6,9 +6,9 @@ using FaceitAPI.Models;
 
 namespace FaceitAPI.Types
 {
-    public class Championship : ApiBase, IChampionship
+    public class Championships : ApiBase, IChampionships
     {
-        public Championship(IAuthorizable authorizable) : base(authorizable)
+        public Championships(IAuthorizable authorizable) : base(authorizable)
         {
 
         }

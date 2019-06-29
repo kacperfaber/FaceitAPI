@@ -14,7 +14,7 @@ namespace FaceitAPI.Tests
         private Paging<ChampionshipSubscription> Get(string id = "8f71b250-d621-4bd5-8265-2d7ecd4508da", string apikey = "316c922d-bfd4-4535-b68d-b8799fe96d47")
         {
             Faceit faceit = new Faceit(new Authorization(apikey));
-            var championship = faceit.GetObject<Championship>();
+            var championship = faceit.GetObject<Championships>();
 
             return championship.GetSubscriptions(id, limit: 3);
         }

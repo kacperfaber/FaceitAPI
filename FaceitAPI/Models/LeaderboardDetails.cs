@@ -38,7 +38,7 @@ namespace FaceitAPI.Models
         public int MinMatches { get; set; }
 
         [JsonProperty("points_per_draw")]
-        public int PointPerDraw { get; set; }
+        public int PointsPerDraw { get; set; }
 
         [JsonProperty("points_per_loss")]
         public int PointsPerLoss { get; set; }

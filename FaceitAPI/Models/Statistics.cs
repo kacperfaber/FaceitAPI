@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace FaceitAPI.Models
 {
-    public class TeamStatistics
+    public class Statistics
     {
         [JsonProperty("team_id")]
         public string TeamId { get; set; }

@@ -2,7 +2,7 @@
 
 namespace FaceitAPI.Models
 {
-    public class OrganizerData
+    public class OrganizerDetails
     {
         [JsonProperty("avatar")]
         public string Avatar { get; set; }

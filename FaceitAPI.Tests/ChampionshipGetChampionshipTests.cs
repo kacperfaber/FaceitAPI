@@ -12,7 +12,7 @@ namespace FaceitAPI.Tests
     {
         ChampionshipDetails Get(string id = "8f71b250-d621-4bd5-8265-2d7ecd4508da", string apikey = "316c922d-bfd4-4535-b68d-b8799fe96d47")
         {
-            return new Faceit(new Authorization(apikey)).GetObject<Championship>().GetChampionship(id);
+            return new Faceit(new Authorization(apikey)).GetObject<Championships>().GetChampionship(id);
         }
 
         [Fact]

@@ -11,7 +11,7 @@ namespace FaceitAPI.Tests
 {
     public partial class TeamsGetStats
     {
-        private TeamStatistics Get(string id = "3d6220c0-4954-44a5-8b51-39cb64448d9c", string game = "csgo", string apikey = "316c922d-bfd4-4535-b68d-b8799fe96d47")
+        private Statistics Get(string id = "3d6220c0-4954-44a5-8b51-39cb64448d9c", string game = "csgo", string apikey = "316c922d-bfd4-4535-b68d-b8799fe96d47")
         {
             Faceit faceit = new Faceit(new Authorization(apikey));
             return faceit.GetObject<Types.Teams>().GetTeamStatistics(id, game);

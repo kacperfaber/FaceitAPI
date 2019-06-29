@@ -55,7 +55,7 @@ namespace FaceitAPI.Tests
             Assert.Equal("Group 1", r.LeaderboardName);
             Assert.Equal("flat", r.PointsType);
             Assert.True(1 == r.MinMatches);
-            Assert.True(1 == r.PointPerDraw);
+            Assert.True(1 == r.PointsPerDraw);
             Assert.True(0 == r.PointsPerLoss);
             Assert.True(3 == r.PointsPerWin);
             Assert.True(10 == r.RankingBoost);

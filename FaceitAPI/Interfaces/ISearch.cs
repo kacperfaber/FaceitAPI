@@ -5,7 +5,7 @@ using FaceitAPI.Models;
 
 namespace FaceitAPI.Interfaces
 {
-    public interface ISearch
+    public interface ISearch : IApiBase
     {
         Paging<SimpleChampionship> GetChampionship(string name, string game = "", string region = "", string type = "all", int offset = 0, int limit = 20);
 
