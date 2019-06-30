@@ -24,22 +24,22 @@ namespace FaceitAPI.Types
 
         public PlayerDetails GetPlayer(string nickname, string game, string game_player_id)
         {
-            throw new NotImplementedException();
+            return Get<PlayerDetails>($"https://open.faceit.com/data/v4/players?nickname={nickname}&game={game}&game_player_id={game_player_id}");
         }
 
         public PlayerDetails GetPlayerById(string player_id)
         {
-            throw new NotImplementedException();
+            return Get<PlayerDetails>($"https://open.faceit.com/data/v4/players/{player_id}");
         }
 
         public Statistics GetStatistics(string player_id, string game_id)
         {
-            throw new NotImplementedException();
+            return Get<Statistics>($"https://open.faceit.com/data/v4/players/{player_id}/stats/{game_id}");
         }
 
         public Paging<Tournament> GetTournaments(string player_id, int offset = 0, int limit = 20)
         {
-            throw new NotImplementedException();
+            return Get<Paging<Tournament>>($"https://open.faceit.com/data/v4/players/{player_id}/tournaments?offset={offset}&limit={limit}");
         }
     }
 }
