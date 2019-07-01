@@ -8,7 +8,7 @@ namespace FaceitAPI.Models
         public string Cover { get; set; }
 
         [JsonProperty("featured_img_l")]
-        public string featuredImageL { get; set; }
+        public string FeaturedImageL { get; set; }
 
         [JsonProperty("featured_img_m")]
         public string FeaturedImageM { get; set; }

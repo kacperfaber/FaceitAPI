@@ -11,10 +11,10 @@ namespace FaceitAPI.Models
         public string Country { get; set; }
 
         [JsonProperty("faceit_elo")]
-        public int FaceitElo { get; set; }
+        public int? FaceitElo { get; set; }
 
         [JsonProperty("game_skill_level")]
-        public int GameSkillLevel { get; set; }
+        public int? GameSkillLevel { get; set; }
 
         [JsonProperty("nickname")]
         public string Nickname { get; set; }
@@ -23,6 +23,6 @@ namespace FaceitAPI.Models
         public string PlayerId { get; set; }
 
         [JsonProperty("position")]
-        public int Position { get; set; }
+        public int? Position { get; set; }
     }
 }

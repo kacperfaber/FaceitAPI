@@ -38,10 +38,10 @@ namespace FaceitAPI.Models
         public string JoinPermission { get; set; }
 
         [JsonProperty("max_skill_level")]
-        public int MaxSkillLevel { get; set; }
+        public int? MaxSkillLevel { get; set; }
 
         [JsonProperty("min_skill_level")]
-        public int MinSkillLevel { get; set; }
+        public int? MinSkillLevel { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -53,7 +53,7 @@ namespace FaceitAPI.Models
         public string OrganizerId { get; set; }
 
         [JsonProperty("players_joined")]
-        public int PlayersJoined { get; set; }
+        public int? PlayersJoined { get; set; }
 
         [JsonProperty("region")]
         public string Region { get; set; }

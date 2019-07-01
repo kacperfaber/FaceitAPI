@@ -1,0 +1,17 @@
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\bin\Debug\netcoreapp2.2\FaceitAPI.Xunit.deps.json
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\bin\Debug\netcoreapp2.2\FaceitAPI.Xunit.runtimeconfig.json
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\bin\Debug\netcoreapp2.2\FaceitAPI.Xunit.runtimeconfig.dev.json
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\bin\Debug\netcoreapp2.2\FaceitAPI.Xunit.dll
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\bin\Debug\netcoreapp2.2\FaceitAPI.Xunit.pdb
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\bin\Debug\netcoreapp2.2\FaceitAPI.dll
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\bin\Debug\netcoreapp2.2\FaceitAPI.pdb
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\obj\Debug\netcoreapp2.2\FaceitAPI.Xunit.csprojAssemblyReference.cache
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\obj\Debug\netcoreapp2.2\FaceitAPI.Xunit.csproj.CoreCompileInputs.cache
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\obj\Debug\netcoreapp2.2\FaceitAPI.Xunit.AssemblyInfoInputs.cache
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\obj\Debug\netcoreapp2.2\FaceitAPI.Xunit.AssemblyInfo.cs
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\obj\Debug\netcoreapp2.2\FaceitAPI.Xunit.csproj.CopyComplete
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\obj\Debug\netcoreapp2.2\FaceitAPI.Xunit.dll
+C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI.Xunit\obj\Debug\netcoreapp2.2\FaceitAPI.Xunit.pdb

@@ -23,7 +23,7 @@ namespace FaceitAPI.Models
         public string Nickname { get; set; }
 
         [JsonProperty("skill_level")]
-        public int SkillLevel { get; set; }
+        public int? SkillLevel { get; set; }
 
         [JsonProperty("user_id")]
         public string UserId { get; set; }

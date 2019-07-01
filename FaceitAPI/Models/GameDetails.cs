@@ -14,7 +14,7 @@ namespace FaceitAPI.Models
         public string LongLabel { get; set; }
 
         [JsonProperty("order")]
-        public int Order { get; set; }
+        public int? Order { get; set; }
 
         [JsonProperty("parent_game_id")]
         public string ParentGameId { get; set; }

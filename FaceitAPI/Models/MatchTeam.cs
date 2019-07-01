@@ -23,7 +23,7 @@ namespace FaceitAPI.Models
         public object RosterV1 { get; set; }
 
         [JsonProperty("substituted")]
-        public bool Substituted { get; set; }
+        public bool? Substituted { get; set; }
 
         [JsonProperty("type")]
         public string Type { get; set; }

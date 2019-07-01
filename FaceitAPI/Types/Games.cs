@@ -13,17 +13,17 @@ namespace FaceitAPI.Types
 
         public GameDetails GetGame(string game_id)
         {
-            throw new NotImplementedException();
+            return Get<GameDetails>($"https://open.faceit.com/data/v4/games/{game_id}");
         }
 
         public Paging<GameDetails> GetGames(int offset = 0, int limit = 20)
         {
-            throw new NotImplementedException();
+            return Get<Paging<GameDetails>>($"https://open.faceit.com/data/v4/games?offset={offset}&limit={limit}");
         }
 
         public GameDetails GetParent(string game_id)
         {
-            throw new NotImplementedException();
+            return Get<GameDetails>($"https://open.faceit.com/data/v4/games/{game_id}/parent");
         }
     }
 }

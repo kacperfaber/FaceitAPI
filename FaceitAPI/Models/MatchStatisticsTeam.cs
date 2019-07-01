@@ -9,7 +9,7 @@ namespace FaceitAPI.Models
         public string TeamId { get; set; }
 
         [JsonProperty("premade")]
-        public bool Premade { get; set; }
+        public bool? Premade { get; set; }
 
         [JsonProperty("team_stats")]
         public Dictionary<string, string> TeamStatistics { get; set; }

@@ -26,6 +26,6 @@ namespace FaceitAPI.Models
         public string TeamId { get; set; }
 
         [JsonProperty("verified")]
-        public bool Verified { get; set; }
+        public bool? Verified { get; set; }
     }
 }

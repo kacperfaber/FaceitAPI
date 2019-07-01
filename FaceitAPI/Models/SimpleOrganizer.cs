@@ -8,7 +8,7 @@ namespace FaceitAPI.Models
     public class SimpleOrganizer
     {
         [JsonProperty("active")]
-        public bool Active { get; set; }
+        public bool? Active { get; set; }
 
         [JsonProperty("avatar")]
         public string Avatar { get; set; }
@@ -26,7 +26,7 @@ namespace FaceitAPI.Models
         public string OrganizerId { get; set; }
 
         [JsonProperty("partner")]
-        public bool Partner { get; set; }
+        public bool? Partner { get; set; }
 
         [JsonProperty("regions")]
         public string[] Regions { get; set; }

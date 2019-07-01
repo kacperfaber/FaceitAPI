@@ -35,7 +35,7 @@ namespace FaceitAPI.Models
         public string MatchType { get; set; }
 
         [JsonProperty("max_players")]
-        public int MaxPlayers { get; set; }
+        public int? MaxPlayers { get; set; }
 
         [JsonProperty("organizer_id")]
         public string OrganizerId { get; set; }
@@ -50,7 +50,7 @@ namespace FaceitAPI.Models
         public MatchResults Results { get; set; }
 
         [JsonProperty("started_at")]
-        public ulong StartedAt { get; set; }
+        public ulong? StartedAt { get; set; }
 
         [JsonProperty("status")]
         public string Status { get; set; }
@@ -59,6 +59,6 @@ namespace FaceitAPI.Models
         public Dictionary<string, object> Teams { get; set; }
 
         [JsonProperty("team_size")]
-        public int TeamSize { get; set; }
+        public int? TeamSize { get; set; }
     }
 }
