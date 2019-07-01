@@ -12,11 +12,11 @@ namespace FaceitAPI.Models
         [JsonProperty("best_of")]
         public int? BestOf { get; set; }
 
-        [JsonProperty("broadcast_start_time")]
-        public ulong BroadcastStartTime { get; set; }
+        //[JsonProperty("broadcast_start_time")]
+        //public ulong? BroadcastStartTime { get; set; }
 
         [JsonProperty("calculate_elo")]
-        public bool?CalculateElo { get; set; }
+        public bool? CalculateElo { get; set; }
 
         [JsonProperty("chat_room_id")]
         public string ChatRoomId { get; set; }
