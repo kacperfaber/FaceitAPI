@@ -14,13 +14,13 @@ namespace FaceitAPI.Models
         public string CompetitionType { get; set; }
 
         [JsonProperty("end_date")]
-        public ulong EndDate { get; set; }
+        public ulong? EndDate { get; set; }
 
         [JsonProperty("game_id")]
         public string GameId { get; set; }
 
         [JsonProperty("group")]
-        public int Group { get; set; }
+        public int? Group { get; set; }
 
         [JsonProperty("leaderboard_id")]
         public string LeaderboardId { get; set; }
@@ -35,16 +35,16 @@ namespace FaceitAPI.Models
         public string LeaderboardType { get; set; }
 
         [JsonProperty("min_matches")]
-        public int MinMatches { get; set; }
+        public int? MinMatches { get; set; }
 
         [JsonProperty("points_per_draw")]
-        public int PointsPerDraw { get; set; }
+        public int? PointsPerDraw { get; set; }
 
         [JsonProperty("points_per_loss")]
-        public int PointsPerLoss { get; set; }
+        public int? PointsPerLoss { get; set; }
 
         [JsonProperty("points_per_win")]
-        public int PointsPerWin { get; set; }
+        public int? PointsPerWin { get; set; }
 
         [JsonProperty("points_type")]
         public string PointsType { get; set; }
@@ -59,10 +59,10 @@ namespace FaceitAPI.Models
         public string Region { get; set; }
 
         [JsonProperty("start_date")]
-        public ulong StartDate { get; set; }
+        public ulong? StartDate { get; set; }
 
         [JsonProperty("starting_points")]
-        public int StartingPoints { get; set; }
+        public int? StartingPoints { get; set; }
 
         [JsonProperty("status")]
         public string Status { get; set; }

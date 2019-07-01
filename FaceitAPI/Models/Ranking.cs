@@ -8,30 +8,30 @@ namespace FaceitAPI.Models
     public class Ranking
     {
         [JsonProperty("current_streak")]
-        public int CurrentStreak { get; set; }
+        public int? CurrentStreak { get; set; }
 
         [JsonProperty("draw")]
-        public int Draw { get; set; }
+        public int? Draw { get; set; }
 
         [JsonProperty("lost")]
-        public int Lost { get; set; }
+        public int? Lost { get; set; }
 
         [JsonProperty("played")]
-        public int Played { get; set; }
+        public int? Played { get; set; }
 
         [JsonProperty("player")]
         public Member Player { get; set; } 
 
         [JsonProperty("points")]
-        public int Points { get; set; }
+        public int? Points { get; set; }
 
         [JsonProperty("position")]
-        public int Position { get; set; }
+        public int? Position { get; set; }
 
         [JsonProperty("win_rate")]
-        public int WinRate { get; set; }
+        public int? WinRate { get; set; }
 
         [JsonProperty("won")]
-        public int Won { get; set; }
+        public int? Won { get; set; }
     }
 }

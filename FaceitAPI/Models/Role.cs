@@ -14,12 +14,12 @@ namespace FaceitAPI.Models
         public string Name { get; set; }
 
         [JsonProperty("ranking")]
-        public int Ranking { get; set; }
+        public int? Ranking { get; set; }
 
         [JsonProperty("role_id")]
         public string RoleId { get; set; }
 
         [JsonProperty("visible_on_chat")]
-        public bool VisibleOnChat { get; set; }
+        public bool? VisibleOnChat { get; set; }
     }
 }

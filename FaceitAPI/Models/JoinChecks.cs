@@ -14,10 +14,10 @@ namespace FaceitAPI.Models
         public string JoinPolicy { get; set; }
 
         [JsonProperty("max_skill_level")]
-        public int MaxSkillLevel { get; set; }
+        public int? MaxSkillLevel { get; set; }
 
         [JsonProperty("min_skill_level")]
-        public int MinSkillLevel { get; set; }
+        public int? MinSkillLevel { get; set; }
 
         [JsonProperty("membership_type")]
         public string MembershipType { get; set; }
@@ -26,6 +26,6 @@ namespace FaceitAPI.Models
         public string[] WhitelistGeoCountries { get; set; }
 
         [JsonProperty("whitelist_geo_countries_min_players")]
-        public int WhitelistGeoCountriesMinPlayers { get; set; }
+        public int? WhitelistGeoCountriesMinPlayers { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace FaceitAPI.Models
     public class ChampionshipDetails
     {
         [JsonProperty("anticheat_required")]
-        public bool AnticheatRequired { get; set; }
+        public bool? AnticheatRequired { get; set; }
 
         [JsonProperty("avatar")]
         public string Avatar { get; set; }
@@ -20,22 +20,22 @@ namespace FaceitAPI.Models
         public string ChampionshipId { get; set; }
 
         [JsonProperty("championship_start")]
-        public ulong ChampionshipStart { get; set; }
+        public ulong? ChampionshipStart { get; set; }
 
         [JsonProperty("checkin_clear")]
-        public ulong CheckinClear { get; set; }
+        public ulong? CheckinClear { get; set; }
 
         [JsonProperty("checkin_start")]
-        public ulong CheckinStart { get; set; }
+        public ulong? CheckinStart { get; set; }
 
         [JsonProperty("checkin_enabled")]
-        public bool CheckinEnabled { get; set; }
+        public bool? CheckinEnabled { get; set; }
 
         [JsonProperty("cover_image")]
         public string CoverImage { get; set; }
 
         [JsonProperty("current_subscriptions")]
-        public int CurrentSubscriptions { get; set; }
+        public int? CurrentSubscriptions { get; set; }
 
         [JsonProperty("description")]
         public string Description { get; set; }
@@ -44,13 +44,13 @@ namespace FaceitAPI.Models
         public string FaceitUrl { get; set; }
 
         [JsonProperty("featured")]
-        public bool Featured { get; set; }
+        public bool? Featured { get; set; }
 
         [JsonProperty("full")]
-        public bool Full { get; set; }
+        public bool? Full { get; set; }
 
         [JsonProperty("subscriptions_locked")]
-        public bool SubscriptionLocked { get; set; }
+        public bool? SubscriptionLocked { get; set; }
 
         [JsonProperty("game_data")]
         public GameData GameData { get; set; }
@@ -87,25 +87,25 @@ namespace FaceitAPI.Models
         public string SeedingStrategy { get; set; }
 
         [JsonProperty("slots")]
-        public int Slots { get; set; }
+        public int? Slots { get; set; }
 
         [JsonProperty("status")]
         public string Status { get; set; }
 
         [JsonProperty("subscription_end")]
-        public ulong SubscriptionEnd { get; set; }
+        public ulong? SubscriptionEnd { get; set; }
 
         [JsonProperty("subscription_start")]
-        public ulong SubscriptionStart { get; set; }
+        public ulong? SubscriptionStart { get; set; }
 
         [JsonProperty("substitution_configuration")]
         public SubstitutionConfiguration SubstitutionConfiguration { get; set; }
 
         [JsonProperty("total_groups")]
-        public int TotalGroups { get; set; }
+        public int? TotalGroups { get; set; }
 
         [JsonProperty("total_rounds")]
-        public int TotalRounds { get; set; }
+        public int? TotalRounds { get; set; }
 
         [JsonProperty("type")]
         public string Type { get; set; }

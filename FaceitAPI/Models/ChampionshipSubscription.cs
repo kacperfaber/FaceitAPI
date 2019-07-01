@@ -14,7 +14,7 @@ namespace FaceitAPI.Models
         public string Leader { get; set; }
 
         [JsonProperty("group")]
-        public int Group { get; set; }
+        public int? Group { get; set; }
 
         [JsonProperty("roster")]
         public string[] Roster { get; set; }

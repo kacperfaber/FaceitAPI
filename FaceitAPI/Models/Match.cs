@@ -10,13 +10,13 @@ namespace FaceitAPI.Models
     public class Match
     {
         [JsonProperty("best_of")]
-        public int BestOf { get; set; }
+        public int? BestOf { get; set; }
 
         [JsonProperty("broadcast_start_time")]
         public ulong BroadcastStartTime { get; set; }
 
         [JsonProperty("calculate_elo")]
-        public bool CalculateElo { get; set; }
+        public bool?CalculateElo { get; set; }
 
         [JsonProperty("chat_room_id")]
         public string ChatRoomId { get; set; }
@@ -31,10 +31,10 @@ namespace FaceitAPI.Models
         public string CompetitionType { get; set; }
 
         [JsonProperty("configured_at")]
-        public ulong ConfiguredAt { get; set; }
+        public ulong? ConfiguredAt { get; set; }
 
         [JsonProperty("started_at")]
-        public ulong StartedAt { get; set; }
+        public ulong? StartedAt { get; set; }
 
         [JsonProperty("demo_url")]
         public string[] DemoUrl { get; set; }
@@ -43,13 +43,13 @@ namespace FaceitAPI.Models
         public string FaceitUrl { get; set; }
 
         [JsonProperty("finished_at")]
-        public ulong FinishedAt { get; set; }
+        public ulong? FinishedAt { get; set; }
 
         [JsonProperty("game")]
         public string Game { get; set; }
 
         [JsonProperty("group")]
-        public int Group { get; set; }
+        public int? Group { get; set; }
 
         [JsonProperty("match_id")]
         public string MatchId { get; set; }
@@ -64,10 +64,10 @@ namespace FaceitAPI.Models
         public MatchResults MatchResults { get; set; }
 
         [JsonProperty("round")]
-        public int Round { get; set; }
+        public int? Round { get; set; }
 
         [JsonProperty("scheduled_at")]
-        public ulong ScheduledAt { get; set; }
+        public ulong? ScheduledAt { get; set; }
 
         [JsonProperty("status")]
         public string Status { get; set; }
@@ -107,6 +107,6 @@ namespace FaceitAPI.Models
         public Voting Voting { get; set; }
 
         [JsonProperty("version")]
-        public int Version { get; set; }
+        public int? Version { get; set; }
     }
 }

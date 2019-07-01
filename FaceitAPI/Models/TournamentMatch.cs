@@ -12,13 +12,13 @@ namespace FaceitAPI.Models
         public string MatchId { get; set; }
 
         [JsonProperty("position")]
-        public int Position { get; set; }
+        public int? Position { get; set; }
 
         [JsonProperty("results")]
         public MatchResults MatchResults { get; set; }
 
         [JsonProperty("round")]
-        public int Round { get; set; }
+        public int? Round { get; set; }
 
         [JsonProperty("state")]
         public string State { get; set; }

@@ -20,7 +20,7 @@ namespace FaceitAPI.Models
         public string Game { get; set; }
 
         [JsonProperty("number_of_members")]
-        public int NumberOfMembers { get; set; }
+        public int? NumberOfMembers { get; set; }
 
         [JsonProperty("organizer_id")]
         public string OrganizerId { get; set; }
@@ -32,10 +32,10 @@ namespace FaceitAPI.Models
         public string OrganizerType { get; set; }
 
         [JsonProperty("players_checkedin")]
-        public int PlayersCheckedin { get; set; }
+        public int? PlayersCheckedin { get; set; }
 
         [JsonProperty("players_joined")]
-        public int PlayersJoined { get; set; }
+        public int? PlayersJoined { get; set; }
 
         [JsonProperty("prize_type")]
         public string PrizeType { get; set; }
@@ -44,10 +44,10 @@ namespace FaceitAPI.Models
         public string Region { get; set; }
 
         [JsonProperty("slots")]
-        public int Slots { get; set; }
+        public int? Slots { get; set; }
 
         [JsonProperty("started_at")]
-        public int StartedAt { get; set; }
+        public int? StartedAt { get; set; }
 
         [JsonProperty("status")]
         public string Status { get; set; }

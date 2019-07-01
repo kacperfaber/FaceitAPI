@@ -20,7 +20,7 @@ namespace FaceitAPI.Models
         public string  FaceitUrl { get; set; }
 
         [JsonProperty("followers_count")]
-        public int FollowersCount { get; set; }
+        public int? FollowersCount { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }
