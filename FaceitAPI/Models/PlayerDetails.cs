@@ -33,7 +33,7 @@ namespace FaceitAPI.Models
         public Dictionary<string, object> Games { get; set; }
 
         [JsonProperty("infractions")]
-        public object Inractions { get; set; }
+        public Infractions Inractions { get; set; }
 
         [JsonProperty("membership_type")]
         public string MembershipType { get; set; }
