@@ -9,6 +9,8 @@ namespace FaceitAPI.Types
     {
         public string Key { get; set; }
 
+        public static readonly string Header = "Authorization";
+
         public Authorization(string apikey)
         {
             Key = apikey;
@@ -17,6 +19,11 @@ namespace FaceitAPI.Types
         public string GetBearer()
         {
             return "Bearer " + Key;
+        }
+
+        public string GetHeaderName()
+        {
+            return Header;
         }
     }
 }

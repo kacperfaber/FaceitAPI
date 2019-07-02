@@ -10,51 +10,29 @@ namespace FaceitAPI.Types
 {
     public class ApiBase
     {
-        protected IAuthorizable Authorizable { get; private set; }
-        protected HttpClient Http;
+        protected IAuthorizable Authorizable;
+        public IResponse Response;
+        public IHttpClient HttpClient = new Client();
+        public IJsonDeserializer Deserializer = new JsonDeserializer();
 
-        public ApiBase()
-        {
-            Http = new HttpClient();
-        }
+        private HttpResponseMessage ResponseMessage;
+        private string ResponseContent;
 
         public ApiBase(IAuthorizable authorizable)
         {
-            Http = new HttpClient();
-            SetAuthorizable(authorizable);
-        }
-
-        protected void SetAuthorizable(IAuthorizable authorizable, bool addheader = true)
-        {
             Authorizable = authorizable;
-
-            if (addheader)
-                Http.DefaultRequestHeaders.Add("Authorization", Authorizable.GetBearer());
-        }
-        
-        protected IAuthorizable GetAuthorizable()
-        {
-            return Authorizable;
         }
 
-        protected T Get<T>(string query, HttpStatusCode expected = HttpStatusCode.OK)
+        protected T Get<T>(string url)
         {
-            var response = Http.GetAsync(query).Result;
+            ResponseMessage = HttpClient.SendRequest(url, Authorizable);
+            ResponseContent = ResponseMessage.Content.ReadAsStringAsync().Result;
+            object instance = Deserializer.Deserialize<T>(ResponseContent);
 
-            if (response.StatusCode == expected)
-            {
-                string json = response.Content.ReadAsStringAsync().Result;
-                T t = JsonConvert.DeserializeObject<T>(json);
+            if (Response != null)
+                Response.ReadResponse(ResponseContent, ResponseMessage);
 
-                return t;
-            }
-
-            if (response.StatusCode == HttpStatusCode.Unauthorized)
-            {
-                throw new UnauthorizedException();
-            }
-
-            throw new AggregateException("Received StatusCode is not excepted.\nThe status code is: " + response.StatusCode.ToString());
+            return (T) instance;
         }
     }
 }

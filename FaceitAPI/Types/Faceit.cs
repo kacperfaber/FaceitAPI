@@ -11,6 +11,11 @@ namespace FaceitAPI.Types
 
         public Faceit(IAuthorizable authorizable)
         {
+            if (authorizable == null)
+            {
+                throw new ArgumentException($"IAuthorizable authorizable on {GetType().FullName} cannot be null");
+            }
+
             Authorizable = authorizable;
         }
 

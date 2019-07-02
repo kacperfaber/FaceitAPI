@@ -4,10 +4,8 @@ using System.Text;
 
 namespace FaceitAPI.Interfaces
 {
-    public interface IAuthorizable
+    public interface IJsonDeserializer
     {
-        string GetBearer();
-
-        string GetHeaderName();
+        T Deserialize<T> (string json);
     }
 }
