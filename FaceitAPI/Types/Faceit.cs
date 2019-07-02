@@ -35,6 +35,11 @@ namespace FaceitAPI.Types
             }
         }
 
+        public void Set<T>(T t) where T : ApiBase
+        {
+            base.Set<T>(t);
+        }
+
         public void DestroyObject<T>()
         {
             UnregisterObject<T>();
