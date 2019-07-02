@@ -5,7 +5,7 @@ using FaceitAPI.Models;
 
 namespace FaceitAPI.Interfaces
 {
-    public interface ITournaments
+    public interface ITournaments : IApiBase
     {
         Paging<Tournament> GetTournaments(string game, string region, string type, int offset = 0, int limit = 20);
 

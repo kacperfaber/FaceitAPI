@@ -5,7 +5,7 @@ using FaceitAPI.Models;
 
 namespace FaceitAPI.Interfaces
 {
-    public interface IOrganizers
+    public interface IOrganizers : IApiBase
     {
         OrganizerDetails GetOrganizer(string organizer_id);
 
