@@ -25,14 +25,25 @@ namespace FaceitAPI.Types
 
         protected T Get<T>(string url)
         {
-            ResponseMessage = HttpClient.SendRequest(url, Authorizable);
-            ResponseContent = ResponseMessage.Content.ReadAsStringAsync().Result;
-            object instance = Deserializer.Deserialize<T>(ResponseContent);
+            try
+            {
+                ResponseMessage = HttpClient.SendRequest(url, Authorizable);
+                ResponseContent = ResponseMessage.Content.ReadAsStringAsync().Result;
+                object instance = Deserializer.Deserialize<T>(ResponseContent);
 
-            if (Response != null)
-                Response.ReadResponse(ResponseContent, ResponseMessage);
+                if (Response != null)
+                    Response.ReadResponse(ResponseContent, ResponseMessage);
 
-            return (T) instance;
+                return (T)instance;
+            }
+
+            catch (Exception e)
+            {
+                if (ResponseMessage.StatusCode == HttpStatusCode.Unauthorized)
+                    throw new UnauthorizedException();
+
+                throw e;
+            }
         }
     }
 }

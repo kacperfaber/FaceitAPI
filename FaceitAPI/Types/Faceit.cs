@@ -28,11 +28,48 @@ namespace FaceitAPI.Types
 
             else
             {
-                T instance = (T) Activator.CreateInstance(typeof(T), Authorizable);
-
+                ApiBase instance = (ApiBase) Activator.CreateInstance(typeof(T), Authorizable);
+                
                 RegisterObject<T>(instance);
-                return instance;
+                return (T) instance;
             }
+        }
+
+        public T GetObject<T>(IResponse response) where T : ApiBase
+        {
+            var obj = GetObject<T>();
+            obj.Response = response;
+
+            return (T) obj;
+        }
+
+        public T GetObject<T>(IHttpClient http) where T : ApiBase
+        {
+            var obj = GetObject<T>();
+            obj.HttpClient = http;
+
+            return (T) obj;
+        }
+
+        public T GetObject<T>(IResponse response = null, IHttpClient http = null, IJsonDeserializer deserializer = null) where T : ApiBase
+        {
+            if (base.Exist<T>())
+            {
+                UnregisterObject<T>();
+            }
+
+            ApiBase api = GetObject<T>();
+            
+            if (response != null) api.Response = response;
+            if (http != null) api.HttpClient = http;
+            if (deserializer != null) api.Deserializer = deserializer;
+
+            return (T) api;
+        }
+
+        public void Set<T>(T t) where T : ApiBase
+        {
+            base.Set<T>(t);
         }
 
         public void DestroyObject<T>()
