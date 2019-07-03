@@ -8,9 +8,9 @@ namespace FaceitAPI.Models
     public class PlayerMatchesPaging <T> : Paging <T>
     {
         [JsonProperty("from")]
-        public int? From { get; set; }
+        public ulong? From { get; set; }
 
         [JsonProperty("to")]
-        public int? To { get; set; }
+        public ulong? To { get; set; }
     }
 }
