@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <summary>Simple to use Faceit Data Api.</summary>
+    <title>FaceitAPI</title>
+    <id>FaceitAPI</id>
+    <version>1.0.0</version>
+    <authors>KacpiiToZiomal</authors>
+    <owners>KacpiiToZiomal</owners>
+    <licenseUrl>https://github.com/kacperf1234/FaceitAPI.Samples/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/kacperf1234/FaceitAPI.Samples</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Simple to use implementation of Faceit Data Api Version 4. You can use it for commercial and non commercial use (MIT LICENSE). Have fun :D</description>
+    <releaseNotes>Its first version :D</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>Faceit WebAPi API FaceitWebApi Csgo Games </tags>
+  </metadata>
+</package>
