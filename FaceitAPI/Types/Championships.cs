@@ -13,19 +13,19 @@ namespace FaceitAPI.Types
 
         }
 
-        public ChampionshipDetails GetChampionship(string championship_id)
+        public ChampionshipDetails GetChampionship(string championshipId)
         {
-            return Get<ChampionshipDetails>($"https://open.faceit.com/data/v4/championships/{championship_id}?expanded=organizer,game");
+            return Get<ChampionshipDetails>($"https://open.faceit.com/data/v4/championships/{championshipId}?expanded=organizer,game");
         }
 
-        public Paging<Match> GetMatches(string championship_id, string type = "all", int offset = 0, int limit = 20)
+        public Paging<Match> GetMatches(string championshipId, string type = "all", int offset = 0, int limit = 20)
         {
-            return Get<Paging<Match>>($"https://open.faceit.com/data/v4/championships/{championship_id}/matches?type={type}&offset={0}&limit={limit}");
+            return Get<Paging<Match>>($"https://open.faceit.com/data/v4/championships/{championshipId}/matches?type={type}&offset={0}&limit={limit}");
         }
 
-        public Paging<ChampionshipSubscription> GetSubscriptions(string championship_id, int offset = 0, int limit = 10)
+        public Paging<ChampionshipSubscription> GetSubscriptions(string championshipId, int offset = 0, int limit = 10)
         {
-            return Get<Paging<ChampionshipSubscription>>($"https://open.faceit.com/data/v4/championships/{championship_id}/subscriptions?offset={offset}&limit={limit}");
+            return Get<Paging<ChampionshipSubscription>>($"https://open.faceit.com/data/v4/championships/{championshipId}/subscriptions?offset={offset}&limit={limit}");
         }
     }
 }

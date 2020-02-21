@@ -9,8 +9,8 @@ namespace FaceitAPI.Models
     /// You can use this in foreach
     /// np. foreach (var item in 
     /// </summary>
-    /// <typeparam name="TYPE"></typeparam>
-    public class Paging <TYPE>
+    /// <typeparam name="T"></typeparam>
+    public class Paging <T>
     {
         [JsonProperty("start")]
         public int? Start { get; set; }
@@ -19,6 +19,6 @@ namespace FaceitAPI.Models
         public int? End { get; set; }
 
         [JsonProperty("items")]
-        public TYPE[] Items { get; set; }
+        public T[] Items { get; set; }
     }
 }

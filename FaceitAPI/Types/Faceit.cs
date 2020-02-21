@@ -11,12 +11,7 @@ namespace FaceitAPI.Types
 
         public Faceit(IAuthorizable authorizable)
         {
-            if (authorizable == null)
-            {
-                throw new ArgumentException($"IAuthorizable authorizable on {GetType().FullName} cannot be null");
-            }
-
-            Authorizable = authorizable;
+            Authorizable = authorizable ?? throw new ArgumentException($"IAuthorizable authorizable on {GetType().FullName} cannot be null");
         }
 
         public T GetObject<T>() where T : ApiBase
@@ -37,7 +32,7 @@ namespace FaceitAPI.Types
 
         public T GetObject<T>(IResponse response) where T : ApiBase
         {
-            var obj = GetObject<T>();
+            T obj = GetObject<T>();
             obj.Response = response;
 
             return (T) obj;
@@ -45,7 +40,7 @@ namespace FaceitAPI.Types
 
         public T GetObject<T>(IHttpClient http) where T : ApiBase
         {
-            var obj = GetObject<T>();
+            T obj = GetObject<T>();
             obj.HttpClient = http;
 
             return (T) obj;

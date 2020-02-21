@@ -9,7 +9,7 @@ namespace FaceitAPI.Types
     {
         public string Key { get; set; }
 
-        public static readonly string Header = "Authorization";
+        public const string Header = "Authorization";
 
         public Authorization(string apikey)
         {

@@ -31,8 +31,7 @@ namespace FaceitAPI.Types
                 ResponseContent = ResponseMessage.Content.ReadAsStringAsync().Result;
                 object instance = Deserializer.Deserialize<T>(ResponseContent);
 
-                if (Response != null)
-                    Response.ReadResponse(ResponseContent, ResponseMessage);
+                Response?.ReadResponse(ResponseContent, ResponseMessage);
 
                 return (T)instance;
             }
