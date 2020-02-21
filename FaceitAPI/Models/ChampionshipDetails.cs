@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Newtonsoft.Json;
 
 namespace FaceitAPI.Models
@@ -67,7 +65,7 @@ namespace FaceitAPI.Models
         [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty("organizer_data")]    
+        [JsonProperty("organizer_data")]
         public OrganizerDetails OrganizerData { get; set; }
 
         [JsonProperty("organizer_id")]

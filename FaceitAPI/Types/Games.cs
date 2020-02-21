@@ -1,6 +1,5 @@
 ﻿using FaceitAPI.Interfaces;
 using FaceitAPI.Models;
-using System;
 
 namespace FaceitAPI.Types
 {
@@ -8,7 +7,6 @@ namespace FaceitAPI.Types
     {
         public Games(IAuthorizable authorizable) : base(authorizable)
         {
-
         }
 
         public GameDetails GetGame(string game_id)

@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -79,10 +77,10 @@ namespace FaceitAPI.Models
         {
             get
             {
-                var array = teams.Values.ToArray();
+                object[] array = teams.Values.ToArray();
                 List<MatchTeam> outarr = new List<MatchTeam>();
 
-                foreach (var item in array)
+                foreach (object item in array)
                 {
                     JObject a = (JObject) item;
                     outarr.Add(a.ToObject<MatchTeam>());

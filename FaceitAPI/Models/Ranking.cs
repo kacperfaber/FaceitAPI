@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace FaceitAPI.Models
 {
@@ -20,7 +17,7 @@ namespace FaceitAPI.Models
         public int? Played { get; set; }
 
         [JsonProperty("player")]
-        public Member Player { get; set; } 
+        public Member Player { get; set; }
 
         [JsonProperty("points")]
         public int? Points { get; set; }

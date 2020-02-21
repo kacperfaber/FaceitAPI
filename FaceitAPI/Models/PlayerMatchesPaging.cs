@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace FaceitAPI.Models
 {
-    public class PlayerMatchesPaging <T> : Paging <T>
+    public class PlayerMatchesPaging<T> : Paging<T>
     {
         [JsonProperty("from")]
         public ulong? From { get; set; }

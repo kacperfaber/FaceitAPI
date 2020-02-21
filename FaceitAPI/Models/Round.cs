@@ -20,7 +20,7 @@ namespace FaceitAPI.Models
         public ulong StartTime { get; set; }
 
         [JsonProperty("starts_asap")]
-        public bool?StartsAsap { get; set; }
+        public bool? StartsAsap { get; set; }
 
         [JsonProperty("substitution_time")]
         public ulong? SubstitutionTime { get; set; }

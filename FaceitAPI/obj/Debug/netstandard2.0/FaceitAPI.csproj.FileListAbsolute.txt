@@ -16,3 +16,11 @@ C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI\obj\Debug\netstandard2.0
 C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI\bin\Debug\netstandard2.0\FaceitAPI.deps.json
 C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI\bin\Debug\netstandard2.0\FaceitAPI.dll
 C:\Users\kacpe_bcwebie\source\repos\FaceitAPI\FaceitAPI\bin\Debug\netstandard2.0\FaceitAPI.pdb
+C:\Users\Kacpii\RiderProjects\FaceitAPI\FaceitAPI\bin\Debug\netstandard2.0\FaceitAPI.deps.json
+C:\Users\Kacpii\RiderProjects\FaceitAPI\FaceitAPI\bin\Debug\netstandard2.0\FaceitAPI.dll
+C:\Users\Kacpii\RiderProjects\FaceitAPI\FaceitAPI\bin\Debug\netstandard2.0\FaceitAPI.pdb
+C:\Users\Kacpii\RiderProjects\FaceitAPI\FaceitAPI\obj\Debug\netstandard2.0\FaceitAPI.csprojAssemblyReference.cache
+C:\Users\Kacpii\RiderProjects\FaceitAPI\FaceitAPI\obj\Debug\netstandard2.0\FaceitAPI.AssemblyInfoInputs.cache
+C:\Users\Kacpii\RiderProjects\FaceitAPI\FaceitAPI\obj\Debug\netstandard2.0\FaceitAPI.AssemblyInfo.cs
+C:\Users\Kacpii\RiderProjects\FaceitAPI\FaceitAPI\obj\Debug\netstandard2.0\FaceitAPI.dll
+C:\Users\Kacpii\RiderProjects\FaceitAPI\FaceitAPI\obj\Debug\netstandard2.0\FaceitAPI.pdb

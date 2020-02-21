@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FaceitAPI.Models
+﻿namespace FaceitAPI.Models
 {
     public class HubRanking
     {

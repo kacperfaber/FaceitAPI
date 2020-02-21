@@ -1,24 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FaceitAPI.Interfaces;
+﻿using FaceitAPI.Interfaces;
 
 namespace FaceitAPI.Types
 {
     public class Authorization : IAuthorizable
     {
-        public string Key { get; set; }
-
         public const string Header = "Authorization";
+        
+        public IBearerValueGenerator BearerValueGenerator;
 
-        public Authorization(string apikey)
+        public Authorization(string apiAccessToken, IBearerValueGenerator bearerValueGenerator = null)
         {
-            Key = apikey;
+            AccessToken = apiAccessToken;
+            BearerValueGenerator = bearerValueGenerator ?? new BearerValueGenerator();
         }
+
+        public string AccessToken { get; set; }
 
         public string GetBearer()
         {
-            return "Bearer " + Key;
+            return BearerValueGenerator.GenerateValue(AccessToken);
         }
 
         public string GetHeaderName()

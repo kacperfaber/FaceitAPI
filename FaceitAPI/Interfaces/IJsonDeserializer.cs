@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FaceitAPI.Interfaces
+﻿namespace FaceitAPI.Interfaces
 {
     public interface IJsonDeserializer
     {
-        T Deserialize<T> (string json);
+        T Deserialize<T>(string json);
     }
 }

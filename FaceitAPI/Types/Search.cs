@@ -1,5 +1,4 @@
-﻿using System;
-using FaceitAPI.Interfaces;
+﻿using FaceitAPI.Interfaces;
 using FaceitAPI.Models;
 
 namespace FaceitAPI.Types
@@ -8,12 +7,13 @@ namespace FaceitAPI.Types
     {
         public Search(IAuthorizable authorizable) : base(authorizable)
         {
-
         }
 
-        public Paging<SimpleChampionship> GetChampionship(string name, string game = "", string region = "", string type = "all", int offset = 0, int limit = 20)
+        public Paging<SimpleChampionship> GetChampionship(string name, string game = "", string region = "", string type = "all", int offset = 0,
+            int limit = 20)
         {
-            return Get<Paging<SimpleChampionship>>($"https://open.faceit.com/data/v4/search/championships?name={name}&game={game}&region={region}&type={type}&offset={offset}&limit={limit}");
+            return Get<Paging<SimpleChampionship>>(
+                $"https://open.faceit.com/data/v4/search/championships?name={name}&game={game}&region={region}&type={type}&offset={offset}&limit={limit}");
         }
 
         public Paging<SimpleHub> GetHubs(string name, string game = "", string region = "", int offset = 0, int limit = 20)
@@ -28,7 +28,8 @@ namespace FaceitAPI.Types
 
         public Paging<SimplePlayer> GetPlayers(string nickname, string game = "", string country = "", int offset = 0, int limit = 20)
         {
-            return Get<Paging<SimplePlayer>>($"https://open.faceit.com/data/v4/search/players?nickname={nickname}&game={game}&country={country}&offset={offset}&limit={limit}");
+            return Get<Paging<SimplePlayer>>(
+                $"https://open.faceit.com/data/v4/search/players?nickname={nickname}&game={game}&country={country}&offset={offset}&limit={limit}");
         }
 
         public Paging<SimpleTeam> GetTeams(string teamname, string game = "", int offset = 0, int limit = 20)
@@ -38,7 +39,8 @@ namespace FaceitAPI.Types
 
         public Paging<SimpleTournament> GetTournaments(string name, string game = "", string region = "", string type = "all", int offset = 0, int limit = 20)
         {
-            return Get<Paging<SimpleTournament>>($"https://open.faceit.com/data/v4/search/tournaments?name={name}&type={type}&region={region}&offset={offset}&limit={limit}");
+            return Get<Paging<SimpleTournament>>(
+                $"https://open.faceit.com/data/v4/search/tournaments?name={name}&type={type}&region={region}&offset={offset}&limit={limit}");
         }
     }
 }

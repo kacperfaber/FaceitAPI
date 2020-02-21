@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FaceitAPI.Interfaces;
+﻿using FaceitAPI.Interfaces;
 using FaceitAPI.Models;
 
 namespace FaceitAPI.Types
@@ -10,7 +7,6 @@ namespace FaceitAPI.Types
     {
         public Hubs(IAuthorizable authorizable) : base(authorizable)
         {
-
         }
 
         public HubDetails GetHub(string hub_id)

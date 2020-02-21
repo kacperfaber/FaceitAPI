@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FaceitAPI.Models;
+﻿using FaceitAPI.Models;
 
 namespace FaceitAPI.Interfaces
 {
     public interface IHubs : IApiBase
     {
-        HubDetails GetHub(string hub_id);
+        HubDetails GetHub(string hubId);
 
-        Paging<Match> GetMatches(string hub_id, string type = "all", int offset = 0, int limit = 20);
+        Paging<Match> GetMatches(string hubId, string type = "all", int offset = 0, int limit = 20);
 
-        Paging<SimpleMember> GetMembers(string hub_id, int offset = 0, int limit = 20);
+        Paging<SimpleMember> GetMembers(string hubId, int offset = 0, int limit = 20);
 
-        Paging<Role> GetRoles(string hub_id, int offset = 0, int limit = 20);
+        Paging<Role> GetRoles(string hubId, int offset = 0, int limit = 20);
 
-        Rules GetRules(string hub_id);
+        Rules GetRules(string hubId);
 
-        HubStatistics GetStatistics(string hub_id, int offset = 0, int limit = 20);
+        HubStatistics GetStatistics(string hubId, int offset = 0, int limit = 20);
     }
 }

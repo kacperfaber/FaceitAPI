@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FaceitAPI.Interfaces
+﻿namespace FaceitAPI.Interfaces
 {
     public interface IAuthorizable
     {

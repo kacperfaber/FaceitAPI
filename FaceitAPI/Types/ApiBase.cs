@@ -1,26 +1,28 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Net;
 using System.Net.Http;
 using FaceitAPI.Exceptions;
 using FaceitAPI.Interfaces;
-using Newtonsoft.Json;
 
 namespace FaceitAPI.Types
 {
     public class ApiBase
     {
         protected IAuthorizable Authorizable;
-        public IResponse Response;
-        public IHttpClient HttpClient = new Client();
-        public IJsonDeserializer Deserializer = new JsonDeserializer();
 
-        private HttpResponseMessage ResponseMessage;
+        public IJsonDeserializer Deserializer;
+        public IHttpClient HttpClient;
+        public IResponse Response;
         private string ResponseContent;
 
-        public ApiBase(IAuthorizable authorizable)
+        private HttpResponseMessage ResponseMessage;
+
+        public ApiBase(IAuthorizable authorizable, IHttpClient http = null, IJsonDeserializer deserializer = null)
         {
             Authorizable = authorizable;
+
+            HttpClient = http ?? new Client();
+            Deserializer = deserializer ?? new JsonDeserializer();
         }
 
         protected T Get<T>(string url)
@@ -29,11 +31,11 @@ namespace FaceitAPI.Types
             {
                 ResponseMessage = HttpClient.SendRequest(url, Authorizable);
                 ResponseContent = ResponseMessage.Content.ReadAsStringAsync().Result;
-                object instance = Deserializer.Deserialize<T>(ResponseContent);
+                T t = Deserializer.Deserialize<T>(ResponseContent);
 
                 Response?.ReadResponse(ResponseContent, ResponseMessage);
 
-                return (T)instance;
+                return t;
             }
 
             catch (Exception e)
@@ -43,6 +45,19 @@ namespace FaceitAPI.Types
 
                 throw e;
             }
+        }
+
+        protected T Get<T>(string url, out IResult result)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IApiResponse Get(IApiRequest request)
+        {
+            // TODO with IApiRequest builders.
+            // 
+            
+            throw new NotImplementedException();
         }
     }
 }

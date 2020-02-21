@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FaceitAPI.Interfaces;
+﻿using FaceitAPI.Interfaces;
 using FaceitAPI.Models;
 
 namespace FaceitAPI.Types
@@ -10,9 +7,8 @@ namespace FaceitAPI.Types
     {
         public Teams(IAuthorizable auth) : base(auth)
         {
-
         }
-        
+
         public ChampionshipTeam GetTeam(string team_id)
         {
             return Get<ChampionshipTeam>($"https://open.faceit.com/data/v4/teams/{team_id}");

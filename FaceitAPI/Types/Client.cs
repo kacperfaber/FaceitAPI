@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Net;
 using System.Net.Http;
-using System.Text;
 using FaceitAPI.Interfaces;
 
 namespace FaceitAPI.Types
 {
     public class Client : IHttpClient
     {
-        public static readonly string ContentType = "ContentType";
-        public static readonly string MimeContentType = "application/json";
+        public const string ContentType = "ContentType";
+        public const string MimeContentType = "application/json";
 
         public HttpMethod HttpMethod = HttpMethod.Get;
 

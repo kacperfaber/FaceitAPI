@@ -11,7 +11,7 @@
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
-      "netcoreapp2.2"
+      "netcoreapp3.1"
     ],
     "sources": {
       "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -19,7 +19,7 @@
       "https://api.nuget.org/v3/index.json": {}
     },
     "frameworks": {
-      "netcoreapp2.2": {
+      "netcoreapp3.1": {
         "projectReferences": {
           "C:\\Users\\Kacpii\\RiderProjects\\FaceitAPI\\FaceitAPI\\FaceitAPI.csproj": {
             "projectPath": "C:\\Users\\Kacpii\\RiderProjects\\FaceitAPI\\FaceitAPI\\FaceitAPI.csproj"
@@ -34,25 +34,19 @@
     }
   },
   "frameworks": {
-    "netcoreapp2.2": {
+    "netcoreapp3.1": {
       "dependencies": {
         "Microsoft.NET.Test.Sdk": {
           "target": "Package",
-          "version": "[15.9.0, )"
-        },
-        "Microsoft.NETCore.App": {
-          "suppressParent": "All",
-          "target": "Package",
-          "version": "[2.2.0, )",
-          "autoReferenced": true
+          "version": "[16.4.0, )"
         },
         "NUnit3TestAdapter": {
           "target": "Package",
-          "version": "[3.11.0, )"
+          "version": "[3.15.1, )"
         },
         "nunit": {
           "target": "Package",
-          "version": "[3.11.0, )"
+          "version": "[3.12.0, )"
         }
       },
       "imports": [
@@ -65,6 +59,11 @@
       ],
       "assetTargetFallback": true,
       "warn": true,
+      "frameworkReferences": {
+        "Microsoft.NETCore.App": {
+          "privateAssets": "all"
+        }
+      },
       "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
     }
   }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FaceitAPI.Interfaces;
+﻿using FaceitAPI.Interfaces;
 using Newtonsoft.Json;
 
 namespace FaceitAPI.Types

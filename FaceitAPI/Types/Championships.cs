@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using FaceitAPI.Interfaces;
+﻿using FaceitAPI.Interfaces;
 using FaceitAPI.Models;
 
 namespace FaceitAPI.Types
@@ -10,7 +7,6 @@ namespace FaceitAPI.Types
     {
         public Championships(IAuthorizable authorizable) : base(authorizable)
         {
-
         }
 
         public ChampionshipDetails GetChampionship(string championshipId)
@@ -25,7 +21,8 @@ namespace FaceitAPI.Types
 
         public Paging<ChampionshipSubscription> GetSubscriptions(string championshipId, int offset = 0, int limit = 10)
         {
-            return Get<Paging<ChampionshipSubscription>>($"https://open.faceit.com/data/v4/championships/{championshipId}/subscriptions?offset={offset}&limit={limit}");
+            return Get<Paging<ChampionshipSubscription>>(
+                $"https://open.faceit.com/data/v4/championships/{championshipId}/subscriptions?offset={offset}&limit={limit}");
         }
     }
 }

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using FaceitAPI.Interfaces;
 
 namespace FaceitAPI.Types
@@ -16,18 +14,12 @@ namespace FaceitAPI.Types
 
         public T GetObject<T>() where T : ApiBase
         {
-            if (Exist<T>())
-            {
-                return Get<T, T>();
-            }
+            if (Exist<T>()) return Get<T, T>();
 
-            else
-            {
-                ApiBase instance = (ApiBase) Activator.CreateInstance(typeof(T), Authorizable);
-                
-                RegisterObject<T>(instance);
-                return (T) instance;
-            }
+            ApiBase instance = (ApiBase) Activator.CreateInstance(typeof(T), Authorizable);
+
+            RegisterObject<T>(instance);
+            return (T) instance;
         }
 
         public T GetObject<T>(IResponse response) where T : ApiBase
@@ -35,7 +27,7 @@ namespace FaceitAPI.Types
             T obj = GetObject<T>();
             obj.Response = response;
 
-            return (T) obj;
+            return obj;
         }
 
         public T GetObject<T>(IHttpClient http) where T : ApiBase
@@ -43,18 +35,15 @@ namespace FaceitAPI.Types
             T obj = GetObject<T>();
             obj.HttpClient = http;
 
-            return (T) obj;
+            return obj;
         }
 
         public T GetObject<T>(IResponse response = null, IHttpClient http = null, IJsonDeserializer deserializer = null) where T : ApiBase
         {
-            if (base.Exist<T>())
-            {
-                UnregisterObject<T>();
-            }
+            if (Exist<T>()) UnregisterObject<T>();
 
             ApiBase api = GetObject<T>();
-            
+
             if (response != null) api.Response = response;
             if (http != null) api.HttpClient = http;
             if (deserializer != null) api.Deserializer = deserializer;
