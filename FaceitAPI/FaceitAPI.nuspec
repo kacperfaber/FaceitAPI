@@ -1,26 +1,26 @@
 <?xml version="1.0"?>
-<package >
-  <metadata>
-    <summary>Simple to use Faceit Data Api.</summary>
-    <title>FaceitAPI</title>
-    <id>FaceitAPI</id>
-    <version>1.0.0.1</version>
-    <authors>KacpiiToZiomal</authors>
-    <owners>KacpiiToZiomal</owners>
-    <license type="file">LICENSE.txt</license>
-    <projectUrl>https://github.com/kacperf1234/FaceitAPI.Samples</projectUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <description>Simple to use implementation of Faceit Data Api Version 4. You can use it for commercial and non commercial use (MIT LICENSE). Have fun :D</description>
-    <releaseNotes>Its first version :D</releaseNotes>
-    <copyright>Copyright 2019</copyright>
-    <tags>Faceit WebAPi API FaceitWebApi Csgo Games </tags>
-	<dependencies>
-		<group>
-			<dependency id="Newtonsoft.Json" version="12.0.2"/>
-		</group>
-	</dependencies>
-  </metadata>
-  <files>
-    <file src="LICENSE.txt" target="" />
-  </files>
+<package>
+    <metadata>
+        <summary>FaceitAPI v4</summary>
+        <title>FaceitAPI</title>
+        <id>FaceitAPI</id>
+        <version>2.0</version>
+        <authors>Kacper Faber</authors>
+        <owners>Kacper Faber</owners>
+        <license type="file">LICENSE.txt</license>
+        <projectUrl>https://github.com/kacperf1234/FaceitAPI.Samples</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>FaceitAPI v4</description>
+        <releaseNotes></releaseNotes>
+        <copyright>Copyright 2020</copyright>
+        <tags>faceit faceitapi faceit-api counter-strike counter-strike-global-offensive api rest-api http-api</tags>
+        <dependencies>
+            <group>
+                <dependency id="Newtonsoft.Json" version="12.0.2"/>
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="LICENSE.txt" target=""/>
+    </files>
 </package>

@@ -11,7 +11,7 @@ namespace FaceitAPI.Types
 
         public bool Validate(string input)
         {
-            // regex
+            throw new NotImplementedException("Method not implemented");
         }
     }
 }
